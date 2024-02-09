@@ -1,2 +1,3 @@
 # LvivSpaces2
-An attempt to update the older version of LvivSpaces. Cooler CSS, who dis
+
+An attempt to update the older version of LvivSpaces. More CSS is coming
