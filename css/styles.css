@@ -8,6 +8,13 @@ body {
   width: 100%;
 }
 
+strong {
+  font-weight: bolder;
+}
+em {
+  font-style: italic;
+}
+
 /* first page main section */
 .section1 {
   background-image: url(../img/hero-photo.png);
@@ -136,7 +143,7 @@ h1 {
 }
 .section2-p {
   width: 500px;
-  margin-top: 90px;
+  margin-top: 100px;
   display: inline-block;
   font-size: 20px;
   line-height: 130%;
@@ -152,12 +159,53 @@ h1 {
 }
 
 #about a:hover {
-  color: #804507;
+  color: #bc6405;
   font-size: larger;
 }
 
-/* Page 3 choose-book */
+/* Page 3 why us */
 
 .section3 {
-  background: linear-gradient(#71574c, #97a3b3);
+  background-color: #97a3b3;
+}
+
+#choose-book h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #ae832d;
+  font-stretch: narrower;
+}
+
+.s3-container {
+  width: 250px;
+  height: 200px;
+  margin: 10px;
+  background-color: rgb(178, 178, 178);
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.s3-div-position {
+  padding-top: 50px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+
+.first-4:first-of-type {
+  background-color: transparent;
+}
+
+.icon-size {
+  font-size: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.last-4 {
+  margin-top: -10px;
 }
