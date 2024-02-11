@@ -34,7 +34,6 @@ h1 {
   font-weight: bolder;
   border: 1px solid #3d352a;
   padding: 20px;
-  /* background-color: rgba(116, 110, 110, 0.5); */
   background-color: rgba(141, 139, 139, 0.5);
   font-size: 50px;
 }
@@ -112,35 +111,49 @@ h1 {
   background: linear-gradient(#71574c, #97a3b3);
 }
 
-.container-section2 {
-  max-width: 600px;
-  display: inline-block;
-  padding-top: 110px;
-}
-
 .img-section2 {
   border-radius: 20px;
   width: 30%;
+  display: inline-block;
   margin-left: 5%;
-  margin-right: 60px;
-  margin-top: -260px;
+  margin-right: 150px;
+  margin-top: 60px;
+  vertical-align: top;
 }
 
-.container-section2 p {
-  text-align: right;
-  padding-bottom: 15px;
-  font-size: 20px;
-  line-height: 150%;
+.s2-numbers p {
+  font-size: 34px;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
-.container-section2 a {
-  margin: 40%;
+
+.s2-numbers p:first-of-type {
+  margin-top: 60px;
+}
+.section2-p p {
+  margin-bottom: 15px;
+}
+.section2-p {
+  width: 500px;
+  margin-top: 90px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+#about a {
   font-size: 20px;
   font-weight: bolder;
   color: #3d2e18;
+  display: block;
+  margin: 20px;
+  text-align: center;
 }
 
-.container-section2 a:hover {
-  color: white;
+#about a:hover {
+  color: #804507;
+  font-size: larger;
 }
 
 /* Page 3 choose-book */
