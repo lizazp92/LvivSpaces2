@@ -170,7 +170,8 @@ h1 {
 }
 
 #amenities h2,
-#choose-book h2 {
+#choose-book h2,
+#why-us h2 {
   font-size: 30px;
   font-weight: bolder;
   padding-top: 10px;
@@ -232,8 +233,6 @@ h1 {
 .option-pic {
   position: relative;
   height: 200px;
-  /* overflow: hidden; */
-  /* margin: 0 auto; */
   margin-bottom: 20px;
 }
 
@@ -294,4 +293,37 @@ h1 {
   color: #cdd858;
   font-size: larger;
   outline: dotted rgb(69, 15, 15);
+}
+/* PAGE 5 WHY US */
+
+.section5 {
+  background: linear-gradient(#846659, #97a3b3);
+}
+#why-us h2 {
+  padding-top: 40px;
+  background-color: transparent;
+  color: rgb(192, 180, 180);
+}
+
+.s5-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: 10px;
+}
+.s5-center {
+  text-align: center;
+}
+.s5-container {
+  position: relative;
+  display: inline-block;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 23px;
 }
