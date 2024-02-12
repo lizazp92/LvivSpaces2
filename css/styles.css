@@ -163,7 +163,7 @@ h1 {
   font-size: larger;
 }
 
-/* Page 3 why us */
+/* included amenities */
 
 .section3 {
   background-color: #97a3b3;
@@ -178,6 +178,8 @@ h1 {
   margin-bottom: 20px;
   background-color: #ae832d;
   font-stretch: narrower;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .s3-container {
@@ -196,16 +198,8 @@ h1 {
   margin-right: 125px;
 }
 
-.first-4:first-of-type {
-  background-color: transparent;
-}
-
 .icon-size {
   font-size: 50px;
   padding-top: 30px;
   padding-bottom: 10px;
-}
-
-.last-4 {
-  margin-top: -10px;
 }
