@@ -342,8 +342,10 @@ h1 {
 
 .footer {
   padding-top: 150px;
-  margin: auto;
+  margin-left: 400px;
   width: 400px;
+
+  margin: auto;
 }
 
 .field-set {
@@ -360,8 +362,8 @@ legend {
   margin-left: auto;
   margin-right: auto;
 }
-input,
-textarea {
+.field-set input,
+.field-set textarea {
   background-color: #e6d8cf;
   display: block;
   margin-bottom: 10px;
@@ -369,46 +371,52 @@ textarea {
   outline: none;
 }
 
-input:hover,
-textarea:hover,
-input:focus,
-textarea:focus {
-  background-color: #dd9a9b;
+.field-set input:hover,
+.field-set textarea:hover,
+.field-set input:focus,
+.field-set textarea:focus {
+  background-color: #b8c25b;
 }
 
-input:not(:placeholder-shown):invalid {
+.field-set input:not(:placeholder-shown):invalid {
   border: 2px solid #c15f5f;
 }
 
-input[type="email"]:focus {
+.field-set input[type="email"]:focus {
   border: none;
+}
+
+form label {
+  padding-bottom: 10px;
 }
 
 /* Submit button in a fieldset*/
 
-.button {
+.form-button {
   padding: 5px 15px;
-  background-color: #9ca1b5;
+  background-color: #1b8119;
   font-size: 15px;
   border-style: none;
 }
 
-button:hover {
-  background-color: #c27072;
+.field-set button:hover {
+  background-color: #1e4b5e;
   color: white;
   padding: 7px 17px;
 }
 
-button:active {
+.field-set button:active {
   background-color: #6c3c3d;
   color: white;
   padding: 7px 17px;
 }
 
 .align-right {
-  text-align: right;
   display: block;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .align-right a {
   display: block;
+  text-decoration: none;
 }
