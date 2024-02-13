@@ -265,10 +265,61 @@
           </div>
         </div>
       </section>
-      <section id="gallery" class="section5 section-position"></section>
+      <section id="gallery" class="section3 section-position">
+        <h2>Gallery</h2>
+        <div class="s5-center">
+          <img src="./img/gallery1.jpg" alt="open-space" />
+          <img src="./img/gallery2.jpg" alt="lounge-area" />
+          <img src="./img/gallery3.jpg" alt="open-office" />
+          <img src="./img/gallery4.jpg" alt="private-office" />
+        </div>
+      </section>
     </main>
-    <!-- <footer>
-      <section id="address"></section>
-    </footer>  -->
+    <footer>
+      <section id="address" class="section3 section-position">
+        <div class="footer">
+          <fieldset class="field-set">
+            <legend>Let's talk!</legend>
+            <form action="/submit" method="post">
+              <label for="name">Name:</label>
+
+              <input type="text" id="name" name="name" placeholder=" " />
+
+              <label for="email">Email:</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                required
+              />
+
+              <label for="your-question">Your message:</label>
+
+              <textarea
+                name="question"
+                id="questionarea"
+                cols="55"
+                rows="10"
+              ></textarea>
+
+              <button type="submit" class="button">Submit</button>
+            </form>
+          </fieldset>
+        </div>
+        <div class="align-right">
+          <small
+            ><a href="">Privacy Policy</a>
+
+            <a href="">Public Offer Agreement</a>
+
+            <a href="">Terms of service</a>
+          </small>
+
+          <span>LvivSpaces © 2024</span>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
