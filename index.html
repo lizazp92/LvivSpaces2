@@ -21,16 +21,17 @@
     <title>LvivSpaces</title>
   </head>
   <body>
-    <section id="hero-page" class="section1 section-position">
+    <section id="hero-page" class="page1 section-position">
       <header id="page-header">
         <nav id="page-navigation" class="main-nav">
           <ul>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#choose-book">Choose and book</a></li>
-            <li><a href="#why-us">Why us</a></li>
-            <li><a href="#gallery">Our gallery</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-
+            <li><a href="#about" class="link-style">About us</a></li>
+            <li>
+              <a href="#choose-book" class="link-style">Choose and book</a>
+            </li>
+            <li><a href="#why-us" class="link-style">Why us</a></li>
+            <li><a href="#gallery" class="link-style">Our gallery</a></li>
+            <li><a href="#contacts" class="link-style">Contacts</a></li>
             <li>
               <form action="/submit" method="get">
                 <input
@@ -53,23 +54,26 @@
         </nav>
       </header>
 
-      <div class="container-section1">
+      <div class="page1__positioning">
         <h1>LvivSpaces</h1>
 
         <p>Coworking and shared office spaces</p>
       </div>
-      <button class="btn-hero">Choose and book</button>
+      <button class="primary-btn">Choose and book</button>
     </section>
     <!-- PAGE 2 -->
     <main>
-      <section id="about" class="section2 section-position section2-flex">
+      <section
+        id="about"
+        class="page2 section-position flexbox-space-evenly page2__flexbox"
+      >
         <img
           src="./img/section2.jpg"
           alt="coworking-place-in-action"
-          class="img-section2"
+          class="page2__img"
         />
 
-        <div class="section2-p">
+        <div class="page2__text">
           <p>
             LvivSpaces is a
             <strong>full-scale innovative coworking space</strong> in Lviv,
@@ -81,149 +85,152 @@
             meet all global trends in creating a high-quality business
             environment.
           </p>
-          <section class="s2-numbers">
-            <p class="s2-p">9000 m<sup>2</sup></p>
+          <section class="page2__stats">
+            <p class="page2__stats--number">9000 m <sup>2</sup></p>
             <span>of all available space for all your needs</span>
-            <p class="s2-p">1300 +</p>
+            <p class="page2__stats--number">1300 +</p>
             <span>people can be placed</span>
 
-            <a href="">Book a tour</a>
+            <a href="" class="page2__stats--link">Book a tour</a>
           </section>
         </div>
       </section>
       <!-- PAGE 3 included amenities -->
 
-      <section id="amenities" class="section3 section-position">
-        <h2>Included amenities</h2>
-        <section class="s3-div-position">
-          <div class="s3-container">
-            <div class="icon-size"><i class="fa-solid fa-wifi"></i></div>
+      <section id="amenities" class="page3">
+        <h2 class="h2-styling">Included amenities</h2>
+        <section class="page3__flexbox">
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
             High-speed WiFi
           </div>
-          <div class="s3-container">
-            <div class="icon-size"><i class="fa-solid fa-door-open"></i></div>
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
+              <i class="fa-solid fa-door-open"></i>
+            </div>
             24/7 access
           </div>
-          <div class="s3-container">
-            <div class="icon-size">
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
               <i class="fa-solid fa-child-reaching"></i>
             </div>
             Child-care room
           </div>
-          <div class="s3-container">
-            <div class="icon-size">
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
               <i class="fa-solid fa-person-shelter"></i>
             </div>
             Equipped bomb shelter
           </div>
 
-          <div class="s3-container">
-            <div class="icon-size">
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
               <i class="fa-solid fa-satellite-dish"></i>
             </div>
             Starlink terminals
           </div>
-          <div class="s3-container">
-            <div class="icon-size"><i class="fa-solid fa-print"></i></div>
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
+              <i class="fa-solid fa-print"></i>
+            </div>
             Printing areas
           </div>
-          <div class="s3-container">
-            <div class="icon-size">
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
               <i class="fa-solid fa-kitchen-set"></i>
             </div>
             Kitchen and lounge area
           </div>
-          <div class="s3-container">
-            <div class="icon-size"><i class="fa-solid fa-bicycle"></i></div>
+          <div class="icon-text-container">
+            <div class="icon-text-container__icon-size">
+              <i class="fa-solid fa-bicycle"></i>
+            </div>
             Parking for bicycles
           </div>
         </section>
       </section>
       <!-- PAGE 4 CHOOSE-BOOK -->
 
-      <section id="choose-book" class="section4 section-position">
-        <h2>
+      <section id="choose-book" class="page4 section-position">
+        <h2 class="h2-styling-transparent">
           <i class="fa-solid fa-arrow-down-long"></i> Choose and book
           <i class="fa-solid fa-arrow-down-long"></i>
         </h2>
-        <div class="s4-choose">
+        <div class="flexbox-space-evenly">
           <div class="option">
-            <div class="option-pic">
-              <img class="option-img" src="./img/day-pass.jpg" alt="day-pass" />
-            </div>
-            <div class="option-content">
+            <img class="option__img" src="./img/day-pass.jpg" alt="day-pass" />
+            <div class="option__content">
               <details>
-                <summary class="option-name">Day Pass</summary>
-                <p class="option-text">
+                <summary class="option__content--name">Day Pass</summary>
+                <p class="option__content--text">
                   For those who prefer to work in an
                   <strong>open space</strong>, in a circle of like-minded people
                   and colleagues. Your fixed workplace 24/7.
                 </p>
               </details>
-              <div class="option-price">$30</div>
+              <div class="option__price">$30</div>
             </div>
-            <button class="btn-hero option-buy">Buy</button>
+            <button class="primary-btn option__btn--buy">Buy</button>
           </div>
 
           <!-- SECOND -->
           <div class="option">
-            <div class="option-pic">
-              <img
-                class="option-img"
-                src="./img/open-space.jpg"
-                alt="open-space"
-              />
-            </div>
-            <div class="option-content">
+            <img
+              class="option__img"
+              src="./img/open-space.jpg"
+              alt="open-space"
+            />
+
+            <div class="option__content">
               <details>
-                <summary class="option-name">Open-space</summary>
-                <p class="option-text">
+                <summary class="option__content--name">Open-space</summary>
+                <p class="option__content--text">
                   For those who prefer to work in an
                   <strong>open space</strong>, in a circle of like-minded people
                   and colleagues. Your fixed workplace 24/7.
                 </p>
               </details>
-              <div class="option-price">$35</div>
+              <div class="option__price">$35</div>
             </div>
-            <button class="btn-hero option-buy">Buy</button>
+            <button class="primary-btn option__btn--buy">Buy</button>
           </div>
 
           <!-- THIRD -->
 
           <div class="option">
-            <div class="option-pic">
-              <img
-                class="option-img"
-                src="./img/private-office.jpg"
-                alt="private-office"
-              />
-            </div>
-            <div class="option-content">
+            <img
+              class="option__img"
+              src="./img/private-office.jpg"
+              alt="private-office"
+            />
+
+            <div class="option__content">
               <details>
-                <summary class="option-name">Private office</summary>
-                <p class="option-text">
+                <summary class="option__content--name">Private office</summary>
+                <p class="option__content--text">
                   For those who want their own space.
                   <strong>Private offices-transformers</strong> for maximum
                   comfort and concentration on teamwork.
                 </p>
               </details>
-              <div class="option-price">$40</div>
+              <div class="option__price">$40</div>
             </div>
-            <button class="btn-hero option-buy">Buy</button>
+            <button class="primary-btn option__btn--buy">Buy</button>
           </div>
           <!-- FOURTH -->
           <div class="option">
-            <div class="option-pic">
-              <img
-                class="option-img"
-                src="./img/meeting-room.jpg"
-                alt="meeting-romm"
-              />
-            </div>
-            <div class="option-content">
+            <img
+              class="option__img"
+              src="./img/meeting-room.jpg"
+              alt="meeting-romm"
+            />
+
+            <div class="option__content">
               <details>
-                <summary class="option-name">Meeting room</summary>
-                <p class="option-text">
+                <summary class="option__content--name">Meeting room</summary>
+                <p class="option__content--text">
                   For fans of endless negotiations:
                   <strong>meeting rooms</strong> are equipped with everything
                   necessary for negotiations and meetings: screen, chromecast,
@@ -231,60 +238,82 @@
                   stickers.
                 </p>
               </details>
-              <div class="option-price">$45</div>
+              <div class="option__price">$45</div>
             </div>
-            <button class="btn-hero option-buy">Buy</button>
+            <button class="primary-btn option__btn--buy">Buy</button>
           </div>
         </div>
         <p class="book-tour">
           Or...
-          <a href="" class="main-nav">Book a tour</a>
+          <a href="" class="link-style">Book a tour</a>
         </p>
       </section>
       <!-- PAGE  5 WHY US -->
 
-      <section id="why-us" class="section5 section-position">
-        <h2>Why choose us</h2>
-        <div class="s5-flexbox">
-          <div class="s5-container">
-            <img src="./img/roof-office.jpg" alt="roof-office" class="s5-img" />
-            <div class="bottom-left">More open space on roof</div>
+      <section id="why-us" class="page5 section-position">
+        <h2 class="h2-styling-transparent">Why choose us</h2>
+        <div class="flexbox-space-evenly">
+          <div class="page5-container">
+            <img
+              src="./img/roof-office.jpg"
+              alt="roof-office"
+              class="page5-container__img"
+            />
+            <div class="page5-container__bottom-text">
+              More open space on roof
+            </div>
           </div>
-          <div class="s5-container">
+          <div class="page5-container">
             <img
               src="./img/pet-friendly.webp"
               alt="pet-friendly"
-              class="s5-img"
+              class="page5-container__img"
             />
-            <div class="bottom-left">Pet-friendly</div>
+            <div class="page5-container__bottom-text">Pet-friendly</div>
           </div>
-          <div class="s5-container">
+          <div class="page5-container">
             <img
               src="./img/onsite-bar.webp"
               alt="on-site cafe"
-              class="s5-img"
+              class="page5-container__img"
             />
-            <div class="bottom-left">In-site cafe</div>
+            <div class="page5-container__bottom-text">In-site cafe</div>
           </div>
         </div>
       </section>
       <!-- GALLERY -->
-      <section id="gallery" class="section3 section-position">
-        <h2>Gallery</h2>
-        <div class="gallery-flexbox">
-          <img src="./img/gallery1.jpg" alt="open-space" />
-          <img src="./img/gallery2.jpg" alt="lounge-area" />
-          <img src="./img/gallery3.jpg" alt="open-office" />
-          <img src="./img/gallery4.jpg" alt="private-office" />
+      <section id="gallery" class="page5 section-position">
+        <h2 class="h2-styling">Gallery</h2>
+        <div class="gallery__flexbox">
+          <img
+            src="./img/gallery1.jpg"
+            alt="open-space"
+            class="gallery__flexbox__img"
+          />
+          <img
+            src="./img/gallery2.jpg"
+            alt="lounge-area"
+            class="gallery__flexbox__img"
+          />
+          <img
+            src="./img/gallery3.jpg"
+            alt="open-office"
+            class="gallery__flexbox__img"
+          />
+          <img
+            src="./img/gallery4.jpg"
+            alt="private-office"
+            class="gallery__flexbox__img"
+          />
         </div>
       </section>
     </main>
     <!-- FOOTER -->
 
     <footer>
-      <section id="address" class="section3 section-position">
+      <section id="address" class="page5 section-position">
         <div class="footer">
-          <fieldset class="field-set">
+          <fieldset class="footer__fieldset">
             <legend>Ask us anything</legend>
             <form action="/submit" method="post">
               <label for="name">Name:</label>
