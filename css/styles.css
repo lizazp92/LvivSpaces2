@@ -316,12 +316,12 @@ h1 {
   margin: 10px;
   border-radius: 10px;
 }
-.s5-center {
-  text-align: center;
+.s5-flexbox {
+  display: flex;
+  justify-content: space-evenly;
 }
 .s5-container {
   position: relative;
-  display: inline-block;
 }
 
 .bottom-left {
