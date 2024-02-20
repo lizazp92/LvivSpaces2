@@ -30,23 +30,26 @@
             <li><a href="#why-us">Why us</a></li>
             <li><a href="#gallery">Our gallery</a></li>
             <li><a href="#contacts">Contacts</a></li>
+
+            <li>
+              <form action="/submit" method="get">
+                <input
+                  class="search"
+                  type="text"
+                  id="text-search"
+                  name="search-bar"
+                  placeholder="Search"
+                />
+                <input
+                  class="submit"
+                  type="submit"
+                  name="submit"
+                  id="search-submit"
+                  value="Search"
+                />
+              </form>
+            </li>
           </ul>
-          <form action="/submit" method="get">
-            <input
-              class="search"
-              type="text"
-              id="text-search"
-              name="search-bar"
-              placeholder="Search"
-            />
-            <input
-              class="submit"
-              type="submit"
-              name="submit"
-              id="search-submit"
-              value="Search"
-            />
-          </form>
         </nav>
       </header>
 
