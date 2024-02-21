@@ -279,7 +279,7 @@ em {
   font-weight: bolder;
   margin-top: 30px;
   padding-top: 15px;
-  margin-bottom: 20px;
+  padding-bottom: 60px;
   text-align: center;
   color: #c4c8cd;
 }
@@ -298,6 +298,7 @@ em {
 
 .page5 {
   background-color: #71574c;
+  padding-bottom: 100px;
 }
 #why-us h2 {
   color: rgb(192, 180, 180);
