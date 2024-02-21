@@ -20,4 +20,4 @@ Smth that irritates me a lot:
 
 - styles.css is a big mess rn. If I work for a few hours, it's fine, I can navigate it. The next day I don't remember anything. Seems like I need to add comments to every css rule.
 
-- if I don't use smth frequantly, I completely forget about it and learn it as if I've never heard about it (ADHD is no joke).
+- if I don't use smth frequently, I completely forget about it and learn it as if I've never heard about it (ADHD is no joke).
