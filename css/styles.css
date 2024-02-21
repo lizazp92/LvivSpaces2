@@ -4,8 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Satisfy&display=swap");
 
 body {
-  margin-top: 0;
+  margin-top: 68px;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/body-background.jpg);
 }
 /* HELPER CLASSES */
 
@@ -91,9 +92,13 @@ em {
 
 .main-nav {
   display: flex;
-  background-color: transparent;
+  background-color: rgba(105, 93, 73, 0.8);
   justify-content: space-around;
   padding: 5px 0;
+  position: fixed;
+  z-index: 2;
+  margin-top: -68px;
+  width: 100%;
 }
 
 .main-nav ul {
@@ -150,7 +155,7 @@ em {
   font-weight: 550;
   border: 1px solid #3d352a;
   padding: 20px 10px;
-  background-color: rgba(141, 139, 139, 0.5);
+  background-color: rgb(61, 53, 42, 0.5);
   font-size: 50px;
   margin-bottom: 20px;
 }
