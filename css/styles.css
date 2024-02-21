@@ -160,11 +160,29 @@ em {
   background: linear-gradient(#71574c, #97a3b3);
 }
 .page2__flexbox {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.page2__img {
+.page2__img1 {
   border-radius: 20px;
-  width: 30%;
+  width: 26%;
+}
+.page2__img1:hover,
+.page2__img2:hover {
+  border-radius: 20px;
+  width: 29%;
+  z-index: 1;
+}
+
+.page2__img2 {
+  border-radius: 20px;
+  width: 27%;
+}
+
+.page2__img-relative {
+  position: relative;
+  left: -70px;
 }
 .page2__text {
   padding-top: 30px;
