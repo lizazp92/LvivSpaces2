@@ -65,7 +65,7 @@
         </nav>
       </header>
 
-      <div class="page1__positioning section-position">
+      <article class="page1__positioning section-position">
         <h1 class="h1-styling">LvivSpaces</h1>
 
         <p>Coworking and shared office spaces</p>
@@ -73,7 +73,7 @@
         <button class="primary-btn">
           <a href="./book-tour.html">Choose and book</a>
         </button>
-      </div>
+      </article>
     </section>
     <!-- PAGE 2 -->
     <main>
@@ -87,7 +87,7 @@
           class="page2__img border border-black"
         />
 
-        <div class="page2__text">
+        <article class="page2__text">
           <p>
             LvivSpaces is a
             <strong>full-scale innovative coworking space</strong> in Lviv,
@@ -107,13 +107,13 @@
 
             <a href="" class="page2__stats-link">Book a tour</a>
           </section>
-        </div>
+        </article>
       </section>
       <!-- PAGE 3 included amenities -->
 
       <section id="amenities" class="page3">
         <h2 class="h2-styling">Included amenities</h2>
-        <section class="page3__flexbox">
+        <div class="page3__flexbox">
           <div class="icon-text-container">
             <div class="icon-text-container__icon-size">
               <i class="fa-solid fa-wifi"></i>
@@ -163,7 +163,7 @@
             </div>
             Parking for bicycles
           </div>
-        </section>
+        </div>
       </section>
       <!-- PAGE 4 CHOOSE-BOOK -->
 
@@ -173,9 +173,9 @@
           <i class="fa-solid fa-arrow-down-long"></i>
         </h2>
         <div class="flexbox-space-evenly">
-          <div class="option">
+          <section class="option">
             <img class="option__img" src="./img/day-pass.jpg" alt="day-pass" />
-            <div class="option__content">
+            <section class="option__content">
               <details>
                 <summary class="option__content--name">Day Pass</summary>
                 <p class="option__content--text">
@@ -184,20 +184,20 @@
                   and colleagues. Your fixed workplace 24/7.
                 </p>
               </details>
-              <div class="option__price">$30</div>
-            </div>
+              <section class="option__price">$30</section>
+            </section>
             <button class="primary-btn option__btn-buy">Buy</button>
-          </div>
+          </section>
 
           <!-- SECOND -->
-          <div class="option">
+          <section class="option">
             <img
               class="option__img"
               src="./img/open-space.jpg"
               alt="open-space"
             />
 
-            <div class="option__content">
+            <section class="option__content">
               <details>
                 <summary class="option__content-name">Open-space</summary>
                 <p class="option__content-text">
@@ -206,21 +206,21 @@
                   and colleagues. Your fixed workplace 24/7.
                 </p>
               </details>
-              <div class="option__price">$35</div>
-            </div>
+              <section class="option__price">$35</section>
+            </section>
             <button class="primary-btn option__btn-buy">Buy</button>
-          </div>
+          </section>
 
           <!-- THIRD -->
 
-          <div class="option">
+          <section class="option">
             <img
               class="option__img"
               src="./img/private-office.jpg"
               alt="private-office"
             />
 
-            <div class="option__content">
+            <section class="option__content">
               <details>
                 <summary class="option__content-name">Private office</summary>
                 <p class="option__content-text">
@@ -229,19 +229,19 @@
                   comfort and concentration on teamwork.
                 </p>
               </details>
-              <div class="option__price">$40</div>
-            </div>
+              <section class="option__price">$40</section>
+            </section>
             <button class="primary-btn option__btn-buy">Buy</button>
-          </div>
+          </section>
           <!-- FOURTH -->
-          <div class="option">
+          <section class="option">
             <img
               class="option__img"
               src="./img/meeting-room.jpg"
               alt="meeting-romm"
             />
 
-            <div class="option__content">
+            <section class="option__content">
               <details>
                 <summary class="option__content-name">Meeting room</summary>
                 <p class="option__content-text">
@@ -252,10 +252,10 @@
                   stickers.
                 </p>
               </details>
-              <div class="option__price">$45</div>
-            </div>
+              <section class="option__price">$45</section>
+            </section>
             <button class="primary-btn option__btn-buy">Buy</button>
-          </div>
+          </section>
         </div>
         <p class="book-tour">
           Or...
@@ -267,32 +267,32 @@
       <section id="why-us" class="page5">
         <h2 class="h2-styling-transparent">Why choose us</h2>
         <div class="flexbox-space-evenly">
-          <div class="page5-container">
+          <section class="page5-container">
             <img
               src="./img/roof-office.jpg"
               alt="roof-office"
               class="page5-container__img"
             />
-            <div class="page5-container__bottom-text">
+            <span class="page5-container__bottom-text">
               More open space on roof
-            </div>
-          </div>
-          <div class="page5-container">
+            </span>
+          </section>
+          <section class="page5-container">
             <img
               src="./img/pet-friendly.webp"
               alt="pet-friendly"
               class="page5-container__img"
             />
-            <div class="page5-container__bottom-text">Pet-friendly</div>
-          </div>
-          <div class="page5-container">
+            <span class="page5-container__bottom-text">Pet-friendly</span>
+          </section>
+          <section class="page5-container">
             <img
               src="./img/onsite-bar.webp"
               alt="on-site cafe"
               class="page5-container__img"
             />
-            <div class="page5-container__bottom-text">In-site cafe</div>
-          </div>
+            <span class="page5-container__bottom-text">In-site cafe</span>
+          </section>
         </div>
       </section>
       <!-- GALLERY -->
@@ -356,34 +356,12 @@
             </button>
           </div>
         </section>
-        <!-- <div class="gallery__flexbox">
-          <img
-            src="./img/gallery1.jpg"
-            alt="open-space"
-            class="gallery__flexbox-img"
-          />
-          <img
-            src="./img/gallery2.jpg"
-            alt="lounge-area"
-            class="gallery__flexbox-img"
-          />
-          <img
-            src="./img/gallery3.jpg"
-            alt="open-office"
-            class="gallery__flexbox-img"
-          />
-          <img
-            src="./img/gallery4.jpg"
-            alt="private-office"
-            class="gallery__flexbox-img"
-          />
-        </div> -->
       </section>
     </main>
     <footer>
       <a href="#"><img src="./img/logo.png" alt="logo" /></a>
 
-      <div>
+      <section>
         <h2 class="footer__headline">Quick Links</h2>
         <ul class="footer__list">
           <li><a href="">About Us</a></li>
@@ -391,8 +369,8 @@
           <li><a href="">Contact</a></li>
           <li><a href="">FAQ</a></li>
         </ul>
-      </div>
-      <div>
+      </section>
+      <section>
         <h2 class="footer__headline">Legal Stuff</h2>
         <ul class="footer__list">
           <li><a href="">Disclaimer</a></li>
@@ -400,8 +378,8 @@
           <li><a href="">Privacy policy</a></li>
           <li><a href="">Term of service</a></li>
         </ul>
-      </div>
-      <div>
+      </section>
+      <section>
         <h2 class="footer__headline footer__h2">
           knowing you're always on the best deal
         </h2>
@@ -422,7 +400,7 @@
             </li>
           </form>
         </ul>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
