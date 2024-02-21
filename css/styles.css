@@ -70,6 +70,7 @@ em {
 .primary-btn:hover {
   background-color: #1d9e51;
   color: white;
+  transition: 1s;
 }
 
 .primary-btn:active {
@@ -175,14 +176,14 @@ em {
 }
 .page2__img1:hover,
 .page2__img2:hover {
-  border-radius: 20px;
-  width: 29%;
+  width: 28%;
   z-index: 1;
+  transition: 1s;
 }
 
 .page2__img2 {
   border-radius: 20px;
-  width: 27%;
+  width: 26%;
 }
 
 .page2__img-relative {
@@ -223,6 +224,7 @@ em {
 .page2__stats-link:hover {
   color: #bc6405;
   font-size: larger;
+  transition: 1s;
 }
 
 /* included amenities */
@@ -333,6 +335,7 @@ em {
   color: #cdd858;
   font-size: larger;
   outline: dotted rgb(69, 15, 15);
+  transition: 1s;
 }
 /* PAGE 5 WHY US */
 
