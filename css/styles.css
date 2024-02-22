@@ -93,6 +93,10 @@ em {
 .relative-container {
   position: relative;
 }
+.hidden {
+  overflow: hidden;
+}
+
 .link-style {
   text-decoration: none;
   color: #3d2e18;
@@ -293,7 +297,7 @@ em {
   object-fit: cover;
   height: 300px;
 }
-.option__img-badge {
+.option__img-badge-new {
   position: absolute;
   top: 10px;
   left: 0;
@@ -301,6 +305,17 @@ em {
   color: white;
   font-size: 30px;
   padding: 10px;
+}
+
+.option__img-badge-discount {
+  position: absolute;
+  top: 40px;
+  right: -55px;
+  background-color: #c253ac;
+  color: white;
+  font-size: 28px;
+  padding: 5px 50px;
+  transform: rotateZ(50deg);
 }
 
 .option__img-description {
@@ -316,8 +331,9 @@ em {
   color: #383333;
 }
 
-.relative-container:hover .option__img {
-  opacity: 0.5;
+.relative-container:hover .option__img,
+.relative-container:hover .option__img-badge-discount {
+  opacity: 0.3;
   transition: 1s;
 }
 
