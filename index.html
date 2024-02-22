@@ -116,7 +116,7 @@
 
       <section id="amenities" class="page3">
         <h2 class="h2-styling">Included amenities</h2>
-        <div class="page3__flexbox">
+        <div class="flexbox-wrap">
           <div class="icon-text-container">
             <div class="icon-text-container__icon-size">
               <i class="fa-solid fa-wifi"></i>
@@ -175,9 +175,16 @@
           <i class="fa-solid fa-arrow-down-long"></i> Choose and book
           <i class="fa-solid fa-arrow-down-long"></i>
         </h2>
-        <div class="flexbox-space-evenly">
+        <div class="flexbox-wrap">
           <section class="option">
-            <img class="option__img" src="./img/day-pass.jpg" alt="day-pass" />
+            <div class="relative-container">
+              <img
+                class="option__img"
+                src="./img/day-pass.jpg"
+                alt="day-pass"
+              />
+              <span class="option__img-text">NEW</span>
+            </div>
             <section class="option__content">
               <details>
                 <summary class="option__content-name">Day Pass</summary>
@@ -270,31 +277,31 @@
       <section id="why-us" class="page5">
         <h2 class="h2-styling-transparent">Why choose us</h2>
         <div class="flexbox-space-evenly">
-          <section class="page5-container">
+          <section class="relative-container">
             <img
               src="./img/roof-office.jpg"
               alt="roof-office"
-              class="page5-container__img"
+              class="relative-container__img"
             />
-            <span class="page5-container__bottom-text">
+            <span class="relative-container__bottom-text">
               More open space on roof
             </span>
           </section>
-          <section class="page5-container">
+          <section class="relative-container">
             <img
               src="./img/pet-friendly.webp"
               alt="pet-friendly"
-              class="page5-container__img"
+              class="relative-container__img"
             />
-            <span class="page5-container__bottom-text">Pet-friendly</span>
+            <span class="relative-container__bottom-text">Pet-friendly</span>
           </section>
-          <section class="page5-container">
+          <section class="relative-container">
             <img
               src="./img/onsite-bar.webp"
               alt="on-site cafe"
-              class="page5-container__img"
+              class="relative-container__img"
             />
-            <span class="page5-container__bottom-text">In-site cafe</span>
+            <span class="relative-container__bottom-text">In-site cafe</span>
           </section>
         </div>
       </section>
