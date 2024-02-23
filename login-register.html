@@ -27,19 +27,25 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/login-register.css" />
-    <title>Book a tour</title>
+    <title>Login/register</title>
   </head>
   <body>
-    <header>
+    <header id="page-header">
       <nav id="page-navigation" class="main-nav">
         <ul>
-          <li><a href="#about" class="link-style">About us</a></li>
+          <li><a href="./index.html" class="link-style">Home</a></li>
           <li>
-            <a href="#choose-book" class="link-style">Choose and book</a>
+            <a href="./index.html#choose-book" class="link-style"
+              >Choose and book</a
+            >
           </li>
-          <li><a href="#why-us" class="link-style">Why us</a></li>
-          <li><a href="#gallery" class="link-style">Our gallery</a></li>
-          <li><a href="#contacts" class="link-style">Contacts</a></li>
+          <li>
+            <a href="./book-tour.html" class="link-style">Book a tour</a>
+          </li>
+          <li>
+            <a href="./index.html#gallery" class="link-style">Our gallery</a>
+          </li>
+
           <li>
             <form class="d-flex" role="search" action="/submit" method="get">
               <input
@@ -55,69 +61,136 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>here will be login/register forms</h1>
-        <h2>For now I'm just checking out bootstrap form classes</h2>
-        <div class="flexbox-space-evenly">
-          <form class="form">
-            <legend>Log in</legend>
-
-            <label for="login-email" class="form-label"
-              >Username or Email address</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="login-email"
-              aria-describedby="emailHelp"
-              placeholder="Username/e-mail"
-              required
-            />
-            <div id="login-email-help" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
-
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
+      <section class="flexbox">
+        <div class="signin-div">
+          <section id="signin">
+            <h1 class="font-weight-bold m-bottom12">
+              <i class="fa-solid fa-arrow-down"></i> Log in
+              <i class="fa-solid fa-arrow-down"></i>
+            </h1>
+            <form action="" method="post" class="formstyle">
+              <label for="email" class="m-bottom12">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                class="m-bottom12"
+              />
+              <label for="password" class="m-bottom12">Password</label>
               <input
                 type="password"
-                class="form-control"
                 id="password"
+                name="password"
                 placeholder="Password"
-                required
+                class="m-bottom12"
               />
-            </div>
-            <button type="submit" class="btn btn-success">Log in</button>
-          </form>
-          <!-- SECOND FORM -->
-          <form class="form">
-            <legend>Join us</legend>
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail2"
-              aria-describedby="emailHelp"
-            />
-            <div id="email" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
 
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
+              <button
+                type="submit"
+                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500 m-bottom32"
+              >
+                Log in
+              </button>
+            </form>
+            <p class="font-size-12 font-weight-500 m-bottom32 sign-in-text">
+              Or log in with
+            </p>
+            <div class="social-media-buttons">
+              <button type="button" class="btn-style secondary-btn">
+                <i class="fa-brands fa-google p-right"></i
+                ><span class="font-weight-700 font-size-13">Google</span>
+              </button>
+              <button type="button" class="btn-style secondary-btn">
+                <i class="fa-brands fa-apple p-right"></i
+                ><span class="font-weight-700 font-size-13">Apple ID</span>
+              </button>
+              <button type="button" class="btn-style secondary-btn m-bottom32">
+                <i class="fa-brands fa-facebook p-right"></i
+                ><span class="font-weight-700 font-size-13">Facebook</span>
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- REGISTRATION -->
+        <div class="signin-div">
+          <section id="register">
+            <h1 class="font-weight-bold m-bottom12">
+              <i class="fa-solid fa-arrow-down"></i> Join us
+              <i class="fa-solid fa-arrow-down"></i>
+            </h1>
+            <form action="" method="post" class="formstyle">
+              <label for="username" class="m-bottom12"
+                >First and last name</label
               >
               <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword2"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="First and last name"
+                class="m-bottom12"
               />
-            </div>
+              <label for="username" class="m-bottom12">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                class="m-bottom12"
+              />
+              <label for="email" class="m-bottom12">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                class="m-bottom32"
+              />
+              <span
+                ><input
+                  type="radio"
+                  id="workplace"
+                  name="workplace"
+                  class="m-bottom12 radiospan"
+                />
+                A workplace</span
+              >
+              <span
+                ><input
+                  type="radio"
+                  id="office"
+                  name="workplace"
+                  class="m-bottom12 radiospan"
+                />
+                Personal office</span
+              >
+              <span class="m-bottom32"
+                ><input
+                  type="radio"
+                  id="team"
+                  name="workplace"
+                  class="m-bottom12"
+                />
+                Team (Up to 8)</span
+              >
+              <label for="password" class="m-bottom12">Create a password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                class="m-bottom12"
+              />
 
-            <button type="submit" class="btn btn-success">Register</button>
-          </form>
+              <button
+                type="submit"
+                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500 m-bottom32"
+              >
+                Register
+              </button>
+            </form>
+          </section>
         </div>
       </section>
     </main>
