@@ -9,6 +9,7 @@ body {
   background-image: url(../img/body-background1.jpg);
   background-position: center;
   background-size: 25%;
+  padding: 0 50px;
 }
 /* HELPER CLASSES */
 
@@ -49,7 +50,6 @@ em {
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-  margin-bottom: 40px;
   font-stretch: narrower;
   background-color: transparent;
 }
@@ -102,18 +102,23 @@ em {
   color: #3d2e18;
   font-weight: bolder;
 }
-
+.mb30 {
+  margin-bottom: 30px;
+}
+.mt-70px {
+  margin-top: -70px;
+}
 /* Navigation bar with flexbox*/
 
 .main-nav {
   display: flex;
   background-color: rgba(101, 87, 74, 0.8);
   justify-content: space-around;
-  padding: 5px 0;
+  padding: 5px 50px;
   position: fixed;
   z-index: 2;
   margin-top: -68px;
-  width: 100%;
+  width: 92.6%;
 }
 
 .main-nav ul {
@@ -125,7 +130,7 @@ em {
 
 .main-nav li {
   background-color: #97a3b380;
-  margin: 0 20px;
+  margin: 0 15px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid rgb(48, 41, 41);
@@ -141,6 +146,12 @@ em {
   border: none;
   background-color: transparent;
   margin-left: 130px;
+}
+.main-nav > ul > li:nth-of-type(5) {
+  background-color: #39a42980;
+}
+.main-nav > ul > li:nth-of-type(5):hover {
+  background-color: #1ac40080;
 }
 
 .main-nav input[type="text"] {
@@ -282,6 +293,7 @@ em {
 
 .page4 {
   background: linear-gradient(#97a3b3, #71574c);
+  padding: 50px 50px;
 }
 
 .option {
@@ -371,7 +383,7 @@ em {
   font-weight: bolder;
   margin-top: 30px;
   padding-top: 15px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   text-align: center;
   color: #c4c8cd;
 }
@@ -391,15 +403,15 @@ em {
 
 .page5 {
   background-color: #71574c;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 #why-us h2 {
   color: rgb(192, 180, 180);
 }
 
 .relative-container__img {
-  width: 400px;
-  height: 400px;
+  width: 375px;
+  height: 375px;
   object-fit: cover;
   margin: 10px;
   border-radius: 10px;
@@ -421,7 +433,7 @@ em {
   justify-content: center;
 }
 #carouselExample {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 65%;
 }
 /* .gallery__flexbox {
