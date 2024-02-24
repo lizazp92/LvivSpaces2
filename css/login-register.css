@@ -9,6 +9,7 @@ body {
   height: 100vh;
   margin-top: 200px;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0 50px;
 }
 
 /* HELPER CLASSES */
@@ -93,6 +94,12 @@ a {
 .main-nav {
   margin-top: -200px;
 }
+.main-nav > ul > li:nth-of-type(5) {
+  background-color: transparent;
+}
+.main-nav > ul > li:nth-of-type(5):hover {
+  background-color: transparent;
+}
 
 /* SIGN IN FORM */
 .signin-div {
@@ -101,7 +108,8 @@ a {
   border-radius: 30px;
   overflow: hidden;
   margin-top: -70px;
-  padding: 15px 52px 20px;
+  padding: 15px 52px 10px;
+  margin-bottom: 15px;
 }
 
 h1 {
