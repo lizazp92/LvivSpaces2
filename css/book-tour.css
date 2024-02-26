@@ -167,6 +167,11 @@ select {
   padding: 14.5px 24px;
   box-sizing: border-box;
 }
+input:hover,
+input:focus {
+  background-color: #b3d0b6;
+  border: 2px dashed rgb(68, 116, 7);
+}
 textarea {
   width: 100%;
 }
