@@ -73,3 +73,20 @@ svg {
   rx: 50px;
   ry: 110px;
 }
+
+/* 4th svg */
+.calc {
+  width: 300px;
+  height: 500px;
+
+  rx: 10px;
+  ry: 10px;
+}
+
+.calc__input {
+  width: 200px;
+  height: 60px;
+  x: 50px;
+  y: 30px;
+  fill: white;
+}
