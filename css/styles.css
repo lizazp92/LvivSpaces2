@@ -31,6 +31,17 @@ em {
   font-family: "Satisfy", cursive;
   font-weight: 700;
   font-style: normal;
+  animation: flow 5s forwards infinite;
+}
+
+@keyframes flow {
+  50% {
+    transform: translateY(20px);
+    transform: scale(1.1);
+  }
+  70% {
+    color: rgb(202, 183, 16);
+  }
 }
 .h2-styling {
   font-size: 30px;
@@ -64,6 +75,7 @@ em {
   margin-top: 15px;
   transition: 500ms background-color linear, 500ms color ease-in;
 }
+
 .primary-btn a {
   text-decoration: none;
   color: inherit;
@@ -145,6 +157,33 @@ em {
 .main-nav .bg-green {
   background-color: #39a42980;
   transition: 500ms all ease-out;
+  animation: wiggle 3s ease-out infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-12deg);
+  }
+  20% {
+    transform: rotateZ(9deg);
+  }
+  25% {
+    transform: rotateZ(-9deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 .main-nav .bg-green:hover {
   background-color: #74c70680;
@@ -227,6 +266,15 @@ em {
   font-weight: bolder;
   margin-top: 15px;
   margin-bottom: 20px;
+  animation: opac 5s forwards infinite;
+}
+@keyframes opac {
+  15% {
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 0%;
+  }
 }
 
 .page2__stats {
@@ -234,6 +282,22 @@ em {
 }
 .page2__text p {
   margin-bottom: 15px;
+}
+
+.page2__text-p1 {
+  animation: bgcolor 2s forwards 5;
+}
+
+@keyframes bgcolor {
+  50% {
+    background-color: #39a42980;
+  }
+  60% {
+    color: rgb(11, 55, 109);
+  }
+  80% {
+    transform: rotate(3deg);
+  }
 }
 
 .page2__stats-link {
