@@ -334,6 +334,7 @@ em {
   font-size: 20px;
   color: #33352e;
   transition: 100ms transform linear, 400ms box-shadow ease-in-out;
+  perspective: 1000px;
 }
 
 .icon-text-container:hover {
