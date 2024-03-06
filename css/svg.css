@@ -1,0 +1,92 @@
+svg {
+  margin: 20px;
+}
+
+/* 1st svg */
+.card {
+  width: 500px;
+  height: 320px;
+  fill: #f0c41b;
+  rx: 35px;
+}
+.card__gray-rect {
+  width: 500px;
+  height: 60px;
+  x: 0;
+  y: 30px;
+  fill: #806f5e;
+}
+.card__details-name1 {
+  width: 85px;
+  height: 17px;
+  x: 50px;
+  y: 130px;
+  fill: #f9eab0;
+  rx: 7px;
+}
+
+.card__details-name2 {
+  x: 150px;
+}
+
+.card__details-other1 {
+  width: 25px;
+  height: 17px;
+  x: 50px;
+  y: 170px;
+  fill: #f9eab0;
+  rx: 7px;
+}
+
+.card__details-other2 {
+  width: 40px;
+  x: 90px;
+}
+
+.card__details-other3 {
+  x: 145px;
+}
+
+.card__details-other4 {
+  width: 40px;
+  x: 185px;
+}
+
+.card__details-other5 {
+  width: 16px;
+  x: 235px;
+}
+
+/* 2nd svg */
+
+.crown {
+  width: 300px;
+  height: 320px;
+  fill: #427d2a;
+}
+
+/* 3rd svg */
+.yt {
+  width: 500px;
+  height: 320px;
+  fill: #d8362a;
+  rx: 50px;
+  ry: 110px;
+}
+
+/* 4th svg */
+.calc {
+  width: 300px;
+  height: 500px;
+
+  rx: 10px;
+  ry: 10px;
+}
+
+.calc__input {
+  width: 200px;
+  height: 60px;
+  x: 50px;
+  y: 30px;
+  fill: white;
+}
