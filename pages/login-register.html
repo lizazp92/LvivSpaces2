@@ -50,20 +50,21 @@
     </header>
     <main>
       <section class="flexbox">
-        <div class="signin-div">
-          <section id="signin">
-            <h1 class="font-weight-bold m-bottom12">
-              <i class="fa-solid fa-arrow-down"></i> Log in
-              <i class="fa-solid fa-arrow-down"></i>
-            </h1>
-            <form
-              action="./save-success.html"
-              method="get"
-              class="formstyle"
-              autocomplete="off"
-              target="_blank"
-              enctype="text/plain"
-            >
+        <form
+          action="./save-success.html"
+          method="get"
+          class="formstyle"
+          autocomplete="off"
+          target="_blank"
+          enctype="text/plain"
+        >
+          <div class="signin-div">
+            <section id="signin">
+              <h1 class="font-weight-bold m-bottom12">
+                <i class="fa-solid fa-arrow-down"></i> Log in
+                <i class="fa-solid fa-arrow-down"></i>
+              </h1>
+
               <label for="email" class="m-bottom12">E-mail</label>
               <input
                 type="email"
@@ -87,35 +88,47 @@
               >
                 Log in
               </button>
-            </form>
-            <p class="font-size-12 font-weight-500 m-bottom32 sign-in-text">
-              Or log in with
-            </p>
-            <div class="social-media-buttons">
-              <button type="button" class="btn-style secondary-btn">
-                <i class="fa-brands fa-google p-right"></i
-                ><span class="font-weight-700 font-size-13">Google</span>
-              </button>
-              <button type="button" class="btn-style secondary-btn">
-                <i class="fa-brands fa-apple p-right"></i
-                ><span class="font-weight-700 font-size-13">Apple ID</span>
-              </button>
-              <button type="button" class="btn-style secondary-btn m-bottom32">
-                <i class="fa-brands fa-facebook p-right"></i
-                ><span class="font-weight-700 font-size-13">Facebook</span>
-              </button>
-            </div>
-          </section>
-        </div>
+
+              <p class="font-size-12 font-weight-500 m-bottom32 sign-in-text">
+                Or log in with
+              </p>
+              <div class="social-media-buttons">
+                <button type="button" class="btn-style secondary-btn">
+                  <i class="fa-brands fa-google p-right"></i
+                  ><span class="font-weight-700 font-size-13">Google</span>
+                </button>
+                <button type="button" class="btn-style secondary-btn">
+                  <i class="fa-brands fa-apple p-right"></i
+                  ><span class="font-weight-700 font-size-13">Apple ID</span>
+                </button>
+                <button
+                  type="button"
+                  class="btn-style secondary-btn m-bottom32"
+                >
+                  <i class="fa-brands fa-facebook p-right"></i
+                  ><span class="font-weight-700 font-size-13">Facebook</span>
+                </button>
+              </div>
+            </section>
+          </div>
+        </form>
 
         <!-- REGISTRATION -->
         <div class="signin-div">
-          <section id="register">
-            <h1 class="font-weight-bold m-bottom12">
-              <i class="fa-solid fa-arrow-down"></i> Join us
-              <i class="fa-solid fa-arrow-down"></i>
-            </h1>
-            <form action="" method="post" class="formstyle">
+          <form
+            action="./save-success.html"
+            method="get"
+            class="formstyle"
+            autocomplete="off"
+            target="_blank"
+            enctype="text/plain"
+          >
+            <section id="register">
+              <h1 class="font-weight-bold m-bottom12">
+                <i class="fa-solid fa-arrow-down"></i> Join us
+                <i class="fa-solid fa-arrow-down"></i>
+              </h1>
+
               <label for="username" class="m-bottom12"
                 >First and last name</label
               >
@@ -184,8 +197,8 @@
               >
                 Register
               </button>
-            </form>
-          </section>
+            </section>
+          </form>
         </div>
       </section>
     </main>
