@@ -49,7 +49,7 @@
           <li class="bg-green">
             <a href="./pages/login-register.html" class="link-style">Join us</a>
           </li>
-          <li class="mainnav-position">
+          <li class="main-nav__form">
             <form class="d-flex" role="search" action="/submit" method="get">
               <input
                 class="form-control me-2"
@@ -65,8 +65,8 @@
     </header>
     <main>
       <section id="hero-page" class="page1">
-        <article class="page1__positioning section-position">
-          <h1 class="h1-styling">LvivSpaces</h1>
+        <article class="page1__content section-position">
+          <h1 class="page1__content-title">LvivSpaces</h1>
 
           <p>Coworking and shared office spaces</p>
 
@@ -77,7 +77,7 @@
       </section>
       <!-- PAGE 2 -->
 
-      <section id="about" class="page2 section-position page2__flexbox">
+      <section id="about" class="page2 section-position page2__wrapper">
         <img
           src="./img/section2-1.jpg"
           alt="coworking-place-in-action"
@@ -90,8 +90,8 @@
           class="page2__img2 border border-black page2__img-relative"
         />
 
-        <article class="page2__text">
-          <p class="page2__text-p1">
+        <article class="page2__content">
+          <p class="page2__content-description">
             LvivSpaces is a
             <strong>full-scale innovative coworking space</strong> in Lviv,
             created in <time datetime="2024">2024</time>. We strive to turn your
@@ -117,12 +117,12 @@
       <!-- PAGE 3 included amenities -->
 
       <section id="amenities" class="page3">
-        <h2 class="h2-styling">Included amenities</h2>
-        <div class="flexbox-wrap">
+        <h2 class="page-heading">Included amenities</h2>
+        <div class="page3__cards">
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-wifi"></i>
                 </div>
                 High-speed WiFi
@@ -131,7 +131,7 @@
                 <img
                   src="./img/flip-card1.webp"
                   alt="highspeed-wifi"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -140,7 +140,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-door-open"></i>
                 </div>
                 24/7 access
@@ -149,7 +149,7 @@
                 <img
                   src="./img/flip-card2.jpg"
                   alt="24/7-access"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -158,7 +158,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-child-reaching"></i>
                 </div>
                 Child-care room
@@ -167,7 +167,7 @@
                 <img
                   src="./img/flip-card3.webp"
                   alt="childcare-room"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -176,7 +176,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-person-shelter"></i>
                 </div>
                 Equipped bomb shelter
@@ -185,7 +185,7 @@
                 <img
                   src="./img/flip-card4.jpg"
                   alt="bomb-shelter"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -194,7 +194,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-satellite-dish"></i>
                 </div>
                 Starlink terminals
@@ -203,7 +203,7 @@
                 <img
                   src="./img/flip-card5.jpg"
                   alt="starlink-terminals"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -212,7 +212,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-print"></i>
                 </div>
                 Printing areas
@@ -221,7 +221,7 @@
                 <img
                   src="./img/flip-card6.jpg"
                   alt="printing-areas"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -230,7 +230,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-kitchen-set"></i>
                 </div>
                 Kitchen and lounge area
@@ -239,7 +239,7 @@
                 <img
                   src="./img/flip-card7.jpg"
                   alt="kitchen-and-lounge-area"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -248,7 +248,7 @@
           <section class="separate-flip">
             <div class="flip-card">
               <div class="flip-card__front">
-                <div class="flip-card__front_icon">
+                <div class="flip-card__front-icon">
                   <i class="fa-solid fa-bicycle"></i>
                 </div>
                 Parking for bicycles
@@ -257,7 +257,7 @@
                 <img
                   src="./img/flip-card8.jpg"
                   alt="bicycle-parking"
-                  class="flip-card__back_img"
+                  class="flip-card__back-img"
                 />
               </div>
             </div>
@@ -267,28 +267,30 @@
       <!-- PAGE 4 CHOOSE-BOOK -->
 
       <section id="choose-book" class="page4">
-        <h2 class="h2-styling-transparent mb30 mt-70px">
+        <h2 class="heading-transparent mb30 mt-70px">
           <i class="fa-solid fa-arrow-down-long"></i> Choose and book
           <i class="fa-solid fa-arrow-down-long"></i>
         </h2>
-        <div class="flexbox-wrap">
+
+        <div class="page4__options">
           <section class="option">
-            <div class="relative-container">
+            <div class="option__card">
               <img
-                class="option__img"
+                class="option__card-img"
                 src="./img/day-pass.jpg"
                 alt="day-pass"
               />
-              <span class="option__img-badge-new">NEW</span>
-              <p class="option__img-description">
+              <span class="option__card-badge-new">NEW</span>
+              <p class="option__card-description">
                 For those who prefer to work in an <strong>open space</strong>,
                 in a circle of like-minded people and colleagues. Your fixed
                 workplace 24/7.
               </p>
             </div>
+
             <section>
-              <h3 class="option__content-name">Day Pass</h3>
-              <section class="relative-container">
+              <h3 class="option__title">Day Pass</h3>
+              <section class="option__btn">
                 <button class="primary-btn option__btn-buy">Buy for 25$</button>
               </section>
             </section>
@@ -297,22 +299,22 @@
           <!-- SECOND -->
 
           <section class="option">
-            <div class="relative-container">
+            <div class="option__card">
               <img
-                class="option__img"
+                class="option__card-img"
                 src="./img/open-space.jpg"
                 alt="open-space"
               />
-              <!-- <span class="option__img-badge-new">NEW</span> -->
-              <p class="option__img-description">
+
+              <p class="option__card-description">
                 Say goodbye to soulless working and grab a hot desk at one of
                 our coworking locations in Lviv. They come complete with all the
                 amenities, networking opportunities and good coffee.
               </p>
             </div>
             <section>
-              <h3 class="option__content-name">Open-space</h3>
-              <section class="relative-container">
+              <h3 class="option__title">Open-space</h3>
+              <section class="option__btn">
                 <button class="primary-btn option__btn-buy">
                   Buy for 4$/hour
                 </button>
@@ -322,22 +324,23 @@
 
           <!-- THIRD -->
           <section class="option">
-            <div class="relative-container">
+            <div class="option__card">
               <img
-                class="option__img"
+                class="option__card-img"
                 src="./img/private-office.jpg"
                 alt="private-office"
               />
               <!-- <span class="option__img-badge-new">NEW</span> -->
-              <p class="option__img-description">
+              <p class="option__card-description">
                 For those who want their own space.
                 <strong>Private offices-transformers</strong> for maximum
                 comfort and concentration on teamwork.
               </p>
             </div>
+
             <section>
-              <h3 class="option__content-name">Private office</h3>
-              <section class="relative-container">
+              <h3 class="option__title">Private office</h3>
+              <section class="option__btn">
                 <button class="primary-btn option__btn-buy">
                   Buy for 7$/hour
                 </button>
@@ -349,16 +352,16 @@
 
           <section class="option">
             <div class="hidden">
-              <div class="relative-container">
+              <div class="option__card">
                 <img
-                  class="option__img"
+                  class="option__card-img"
                   src="./img/meeting-room.jpg"
                   alt="meeting-room"
                 />
 
-                <span class="option__img-badge-discount">10% OFF</span>
+                <span class="option__card-badge-discount">10% OFF</span>
 
-                <p class="option__img-description">
+                <p class="option__card-description">
                   For fans of endless negotiations:
                   <strong>meeting rooms</strong> are equipped with screen,
                   chromecast, webCamera, flipcharts/marker walls,
@@ -366,10 +369,10 @@
                 </p>
               </div>
               <section>
-                <h3 class="option__content-name">Meeting room</h3>
+                <h3 class="option__title">Meeting room</h3>
               </section>
             </div>
-            <section class="relative-container">
+            <section class="option__btn">
               <button class="primary-btn option__btn-buy">
                 Buy for 15$/hour
               </button>
@@ -384,39 +387,37 @@
       <!-- PAGE  5 WHY US -->
 
       <section id="why-us" class="page5">
-        <h2 class="h2-styling-transparent mb30">Why choose us</h2>
-        <div class="flexbox-space-evenly">
-          <section class="relative-container">
+        <h2 class="heading-transparent mb30">Why choose us</h2>
+        <div class="page5__wrapper">
+          <section class="page5__reason">
             <img
               src="./img/roof-office.jpg"
               alt="roof-office"
-              class="relative-container__img"
+              class="page5__reason-img"
             />
-            <span class="relative-container__bottom-text">
-              More open space on roof
-            </span>
+            <span class="page5__reason-text"> More open space on roof </span>
           </section>
-          <section class="relative-container">
+          <section class="page5__reason">
             <img
               src="./img/pet-friendly.webp"
               alt="pet-friendly"
-              class="relative-container__img"
+              class="page5__reason-img"
             />
-            <span class="relative-container__bottom-text">Pet-friendly</span>
+            <span class="page5__reason-text">Pet-friendly</span>
           </section>
-          <section class="relative-container">
+          <section class="page5__reason">
             <img
               src="./img/onsite-bar.webp"
               alt="on-site cafe"
-              class="relative-container__img"
+              class="page5__reason-img"
             />
-            <span class="relative-container__bottom-text">In-site cafe</span>
+            <span class="page5__reason-text">In-site cafe</span>
           </section>
         </div>
       </section>
       <!-- GALLERY -->
       <section id="gallery" class="page5">
-        <h2 class="h2-styling">Gallery</h2>
+        <h2 class="page-heading">Gallery</h2>
         <section class="gallery">
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
@@ -480,42 +481,42 @@
     <!-- FOOTER -->
     <footer>
       <section class="footer">
-        <section class="footer__section">
+        <section class="footer__wrapper">
           <a href="#"><img src="./img/logo.png" alt="logo" class="logo" /></a>
         </section>
-        <section class="footer__section">
+        <section class="footer__wrapper">
           <h2 class="footer__headline">E-mail us</h2>
           <ul class="footer__list">
             <li>
               <address>
                 <a href="mailto:lvivspaces@example.com"
-                  ><div class="round-icon">
+                  ><div class="footer__list-bg-icon">
                     <i class="fa-solid fa-envelope footer__icon"></i></div
                 ></a>
               </address>
             </li>
           </ul>
         </section>
-        <section class="footer__section">
+        <section class="footer__wrapper">
           <h2 class="footer__headline">Call</h2>
           <ul class="footer__list">
             <li>
               <address>
                 <a href="tel:+38001111111">
-                  <div class="round-icon">
+                  <div class="footer__list-bg-icon">
                     <i class="fa-solid fa-phone footer__icon"></i></div
                 ></a>
               </address>
             </li>
           </ul>
         </section>
-        <section class="footer__section">
+        <section class="footer__wrapper">
           <h2 class="footer__headline">Visit</h2>
           <ul class="footer__list">
             <li>
               <address>
                 <a href="https://maps.app.goo.gl/QBa9YxYaPCT7cRcq9"
-                  ><div class="round-icon">
+                  ><div class="footer__list-bg-icon">
                     <i class="fa-solid fa-building footer__icon"></i></div
                 ></a>
               </address>
