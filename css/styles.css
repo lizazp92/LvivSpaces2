@@ -538,6 +538,14 @@ em {
   object-fit: cover;
 }
 
+.page5__reason {
+  filter: brightness(50%);
+  transition: 500ms filter ease-out;
+}
+.page5__reason:hover {
+  filter: brightness(100%);
+}
+
 .page5__reason-text {
   position: absolute;
   bottom: 20px;
