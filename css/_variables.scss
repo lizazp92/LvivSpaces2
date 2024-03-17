@@ -1,4 +1,30 @@
-// custom colours for navbar
+//helper
+
+$font-stack: Arial, Helvetica, sans-serif;
+$page-heading-bg: #ae832d;
+$page-link: #3d2e18;
+
+$primary-btn-color: #3f2f1a;
+$primary-btn-hover: #1d9e51;
+$primary-btn-hover-color: white;
+$primary-btn-active: #474a40;
+
+$page-gradient-1color: #71574c;
+$page-gradient-2color: #97a3b3;
+
+// PAGE 1
+
+$hero-title: white;
+$font-hero-title: "Satisfy", cursive;
+$font-hero-text: "Karla", sans-serif;
+$hero-text-border: #3d352a;
+$hero-text-bg: rgb(61, 53, 42, 0.5);
+
+// PAGE 2
+
+$page2-link-hover: #0f6f2c;
+
+// navbar
 
 $navbar-bg: rgba(101, 87, 74, 0.8);
 $navbar-item-border: rgb(48, 41, 41);

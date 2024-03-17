@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 // HELPER
 
 @mixin flex {
@@ -27,13 +29,17 @@
   align-items: center;
 }
 
+@mixin self-center {
+  align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+}
 @mixin align-content-center {
   align-content: center;
   -ms-flex-line-pack: center;
 }
 @mixin flex-space-around {
-  //   @include flex;
-  display: flex;
+  @include flex;
   justify-content: space-around;
   -ms-flex-pack: distribute;
 }
@@ -43,6 +49,15 @@
   justify-content: flex-end;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
+}
+
+@mixin bg-gradient($page-gradient-1color, $page-gradient-2color) {
+  background: -webkit-linear-gradient(
+    $page-gradient-1color,
+    $page-gradient-2color
+  );
+  background: -o-linear-gradient($page-gradient-1color, $page-gradient-2color);
+  background: linear-gradient($page-gradient-1color, $page-gradient-2color);
 }
 
 @mixin transition($args) {
@@ -67,4 +82,21 @@
   @include flex-end;
   @include items-center;
   list-style: none;
+}
+
+// PAGE 1
+
+@mixin page1__bg {
+  background-image: url(../img/hero-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@mixin page1__title-font {
+  font-size: 80px;
+  font-stretch: extra-expanded;
+  font-family: $font-hero-title;
+  font-weight: 700;
+  font-style: normal;
 }

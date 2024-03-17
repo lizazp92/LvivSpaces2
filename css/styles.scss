@@ -1,0 +1,185 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+// IMPORTED FONTS
+
+// hero page h1
+@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Satisfy&display=swap");
+// hero page p
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Satisfy&display=swap");
+
+body {
+  margin-top: 68px;
+  font-family: $font-stack;
+  background-image: url(../img/body-background1.jpg);
+  background-position: center;
+  background-size: 25%;
+}
+
+.section-position {
+  height: 100vh;
+  width: 100%;
+}
+.page-heading {
+  @extend .heading-transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: $page-heading-bg;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.heading-transparent {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  font-stretch: narrower;
+  background-color: transparent;
+}
+strong {
+  font-weight: bolder;
+}
+em {
+  font-style: italic;
+}
+.hidden {
+  overflow: hidden;
+}
+.link-style {
+  text-decoration: none;
+  color: $page-link;
+  font-weight: bolder;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt-70px {
+  margin-top: -70px;
+}
+
+.f-s20 {
+  font-size: 20;
+}
+.f-s34 {
+  font-size: 34px;
+}
+.f-s50 {
+  font-size: 50px;
+}
+.fw-550 {
+  font-weight: 550;
+}
+.fw-bolder {
+  font-weight: bolder;
+}
+.br20 {
+  border-radius: 20px;
+}
+
+.primary-btn {
+  background-color: $page-heading-bg;
+  border-style: none;
+  padding: 10px 20px;
+  font-family: inherit;
+  color: $primary-btn-color;
+  @include transition(500ms background-color linear);
+  @include transition(500ms color ease-in);
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    background-color: $primary-btn-hover;
+    color: $primary-btn-hover-color;
+  }
+  &:active {
+    background-color: $primary-btn-active;
+  }
+}
+
+// PAGE 1
+
+.page1 {
+  @include page1__bg;
+  color: $hero-title;
+  text-align: center;
+  &__content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    &-title {
+      @include page1__title-font;
+      margin-bottom: 20px;
+      @include animation(flow 5s forwards infinite);
+    }
+    p {
+      font-family: $font-hero-text;
+      border: 1px solid $hero-text-border;
+      padding: 20px 10px;
+      background-color: $hero-text-bg;
+    }
+  }
+}
+
+// PAGE 2
+
+.page2 {
+  @include bg-gradient($page-gradient-1color, $page-gradient-2color);
+  &__wrapper {
+    @include flex-center;
+    @include items-center;
+  }
+  &__img1,
+  &__img2 {
+    width: 26%;
+    @include transition(500ms transform ease-in-out 100ms);
+    &:hover {
+      @include transform(scale(1.2));
+      z-index: 1;
+    }
+  }
+  &__img-relative {
+    position: relative;
+    left: -70px;
+  }
+  &__content {
+    width: 480px;
+    @include self-center;
+    line-height: 130%;
+  }
+  &__stats {
+    &-link {
+      color: $page-link;
+      display: block;
+      margin: 20px;
+      text-align: center;
+      @include transition(500ms transform ease-out);
+      @include transition(200ms color ease-in);
+      &:hover {
+        color: $page2-link-hover;
+        @include transform(
+          translateX(10px) rotate(10deg) translateY(5px) scale(1.5)
+        );
+      }
+    }
+  }
+}

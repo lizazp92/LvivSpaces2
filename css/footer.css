@@ -1,6 +1,8 @@
 /* FOOTER */
 .footer {
   display: flex;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
   justify-content: space-around;
   -ms-flex-pack: distribute;
   -webkit-box-align: center;
@@ -81,12 +83,12 @@
   color: #bcd0e5;
   font-weight: bold;
 }
-.footer input[type=email] {
+.footer input[type="email"] {
   border-color: #bcd0e5;
   width: 280px;
   height: 48px;
 }
-.footer input[type=email]:focus {
+.footer input[type="email"]:focus {
   background-color: #7c957b;
   color: #ffffff;
 }
