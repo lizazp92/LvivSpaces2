@@ -1,95 +1,69 @@
 /* Navigation bar with flexbox*/
-
 .main-nav {
   display: flex;
-  background-color: rgba(101, 87, 74, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
   justify-content: space-around;
+  -ms-flex-pack: distribute;
+  background-color: rgba(101, 87, 74, 0.8);
   padding: 5px 50px;
   position: fixed;
   z-index: 3;
   margin-top: -68px;
   width: 100%;
 }
-
-.main-nav ul {
-  list-style: none;
+.main-nav__list {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  list-style: none;
 }
-
-@supports not (display: flex) {
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -ms-flex-pack: distribute;
-  }
-  .main-nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-  }
-}
-
-.main-nav li {
-  background-color: #97a3b380;
-  margin: 0 15px;
+.main-nav__list-item {
+  background-color: rgba(151, 163, 179, 0.5019607843);
+  margin: 10px 15px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid rgb(48, 41, 41);
-  transition: 500ms background-color ease-in, 500ms scale ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+  -webkit-transition: scale 0.5s ease-in-out;
+  -o-transition: scale 0.5s ease-in-out;
+  transition: scale 0.5s ease-in-out;
 }
-
-@supports not (transition: background-color) {
-  .main-nav li {
-    -webkit-transition: 500ms background-color ease-in, 500ms scale ease-in-out;
-    -o-transition: 500ms background-color ease-in, 500ms scale ease-in-out;
-  }
-}
-
-.main-nav li:hover {
-  background-color: #61697480;
+.main-nav__list-item:hover {
+  background-color: rgba(97, 105, 116, 0.5019607843);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-@supports not (transform: scale(1.1)) {
-  .main-nav li:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-  }
-}
-
-.main-nav > ul > .main-nav__form {
+.main-nav__form {
   border: none;
   background-color: transparent;
   margin-left: 130px;
 }
-
-.main-nav .bg-green {
-  background-color: #39a42980;
-  transition: 500ms all ease-out;
-  animation: wiggle 3s ease-out infinite;
-}
-
-@supports (not (animation-name: wiggle)) and (not (transition: all)) {
-  .main-nav .bg-green {
-    -webkit-animation: wiggle 3s ease-out infinite;
-    -webkit-transition: 500ms all ease-out;
-    -o-transition: 500ms all ease-out;
-  }
-}
-
-.main-nav .bg-green:hover {
-  background-color: #74c70680;
-}
-
-.main-nav input[type="text"] {
+.main-nav input[type=text] {
   width: 200px;
 }
-
-.main-nav input[type="submit"] {
+.main-nav input[type=submit] {
   width: 65px;
 }
+.main-nav .bg-green {
+  background-color: rgba(57, 164, 41, 0.5019607843);
+  -webkit-transition: 500ms all ease-out;
+  -o-transition: 500ms all ease-out;
+  transition: 500ms all ease-out;
+  -webkit-animation: wiggle 3s ease-out infinite;
+  animation: wiggle 3s ease-out infinite;
+}
+.main-nav .bg-green:hover {
+  background-color: rgba(116, 199, 6, 0.5019607843);
+}
+
+/*# sourceMappingURL=navbar.css.map */

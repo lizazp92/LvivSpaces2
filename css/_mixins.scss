@@ -1,0 +1,48 @@
+// NAVBAR
+
+@mixin flex {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+@mixin items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@mixin flex-space-around {
+  @include flex;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+}
+
+@mixin flex-end {
+  @include flex;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+@mixin navbar__list {
+  @include flex-end;
+  @include items-center;
+  list-style: none;
+}
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -ms-transform: $args;
+  transform: $args;
+}
+
+@mixin animation($args) {
+  -webkit-animation: $args;
+  animation: $args;
+}
