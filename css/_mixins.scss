@@ -1,4 +1,4 @@
-// NAVBAR
+// HELPER
 
 @mixin flex {
   display: flex;
@@ -6,13 +6,34 @@
   display: -ms-flexbox;
 }
 
+@mixin flex-center {
+  @include flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+@mixin flex-column {
+  @include flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+}
+
 @mixin items-center {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
+
+@mixin align-content-center {
+  align-content: center;
+  -ms-flex-line-pack: center;
+}
 @mixin flex-space-around {
-  @include flex;
+  //   @include flex;
+  display: flex;
   justify-content: space-around;
   -ms-flex-pack: distribute;
 }
@@ -22,12 +43,6 @@
   justify-content: flex-end;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-}
-
-@mixin navbar__list {
-  @include flex-end;
-  @include items-center;
-  list-style: none;
 }
 
 @mixin transition($args) {
@@ -45,4 +60,11 @@
 @mixin animation($args) {
   -webkit-animation: $args;
   animation: $args;
+}
+
+// NAVBAR
+@mixin navbar__list {
+  @include flex-end;
+  @include items-center;
+  list-style: none;
 }

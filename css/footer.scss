@@ -1,0 +1,83 @@
+/* FOOTER */
+
+@use "variables" as *;
+@use "mixins" as *;
+
+.footer {
+  @include flex-space-around;
+  @include items-center;
+  @include align-content-center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  background-color: $footer-bg;
+
+  &__wrapper {
+    @include flex-column;
+    @include items-center;
+    align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  &__headline {
+    font-size: 20px;
+    font-weight: bold;
+    color: $footer-headline;
+    line-height: 2;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2.5;
+    font-weight: 600;
+    li {
+      a {
+        text-decoration: none;
+        color: $footer-link;
+      }
+    }
+    &-bg-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      background-color: $footer-icon-bg;
+      @include flex-center;
+      @include items-center;
+      @include transition(300ms transform linear);
+      &:hover {
+        @include transform(scale(1.2));
+      }
+    }
+  }
+  &__btn {
+    width: 131px;
+    height: 39px;
+    border-radius: 0;
+    margin-top: 21px;
+  }
+  input::placeholder {
+    color: $footer-input;
+    font-weight: bold;
+  }
+  input[type="email"] {
+    border-color: $footer-input;
+    width: 280px;
+    height: 48px;
+    &:focus {
+      background-color: $footer-input-focus;
+      color: $footer-bg;
+    }
+  }
+  &__icon {
+    color: $footer-icon;
+  }
+  address {
+    a {
+      text-decoration: none;
+    }
+  }
+}
