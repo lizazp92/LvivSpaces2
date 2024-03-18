@@ -93,6 +93,11 @@
   perspective: $val;
   -webkit-perspective: $val;
 }
+
+@mixin object-cover {
+  object-fit: cover;
+  -o-object-fit: cover;
+}
 // NAVBAR
 @mixin navbar__list {
   @include flex-end;
@@ -121,4 +126,40 @@
 @mixin backface-hidden {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+// PAGE 4
+
+@mixin grid-center-4($rows: null, $columns: null, $grid-gap: null) {
+  display: grid;
+  grid-gap: $grid-gap;
+  grid-template-rows: $rows;
+  grid-template-columns: $columns;
+  justify-content: center;
+  display: -ms-grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-grid-columns: $columns;
+  -ms-grid-rows: $rows;
+  *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+}
+
+@mixin box-shadow($params...) {
+  -webkit-box-shadow: $params;
+  box-shadow: $params;
 }
