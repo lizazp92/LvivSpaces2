@@ -20,6 +20,15 @@ body {
   height: 100vh;
   width: 100%;
 }
+
+.heading-transparent {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  font-stretch: narrower;
+  background-color: transparent;
+}
+
 .page-heading {
   @extend .heading-transparent;
   padding-top: 10px;
@@ -30,13 +39,6 @@ body {
   margin-left: 10%;
 }
 
-.heading-transparent {
-  font-size: 30px;
-  font-weight: bolder;
-  text-align: center;
-  font-stretch: narrower;
-  background-color: transparent;
-}
 strong {
   font-weight: bolder;
 }
@@ -52,9 +54,19 @@ em {
   font-weight: bolder;
 }
 
+// PADDINGS
+
 .pt30 {
   padding-top: 30px;
 }
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+// MARGINS
 
 .mb15 {
   margin-bottom: 15px;
@@ -75,6 +87,8 @@ em {
   margin-top: -70px;
 }
 
+// FONT SIZES
+
 .f-s20 {
   font-size: 20;
 }
@@ -84,6 +98,9 @@ em {
 .f-s50 {
   font-size: 50px;
 }
+
+// FONT WEIGHT
+
 .fw-550 {
   font-weight: 550;
 }
@@ -93,6 +110,8 @@ em {
 .br20 {
   border-radius: 20px;
 }
+
+//BTN
 
 .primary-btn {
   background-color: $page-heading-bg;
@@ -148,6 +167,10 @@ em {
     @include flex-center;
     @include items-center;
   }
+  &__img-relative {
+    position: relative;
+    left: -70px;
+  }
   &__img1,
   &__img2 {
     width: 26%;
@@ -157,10 +180,7 @@ em {
       z-index: 1;
     }
   }
-  &__img-relative {
-    position: relative;
-    left: -70px;
-  }
+
   &__content {
     width: 480px;
     @include self-center;
@@ -181,5 +201,58 @@ em {
         );
       }
     }
+  }
+}
+
+// PAGE 3 AMENITIES
+
+.page3 {
+  background-color: $page-gradient-2color;
+  &__cards {
+    @include flex-wrap;
+  }
+}
+
+.flip-card {
+  width: 250px;
+  height: 200px;
+  margin: 12px;
+  background-color: $flip-card-bg;
+  color: $flip-card-color;
+  @include flex-column;
+  @include items-center;
+  justify-items: center;
+  position: relative;
+  text-align: center;
+  @include transition(600ms all ease-out);
+  @include preserve-3d;
+  @include perspective(1000px);
+  &__front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include backface-hidden;
+  }
+  &__back {
+    @extend .flip-card__front;
+    overflow: hidden;
+    @include transform(rotateY(180deg));
+    position: relative;
+    &-img {
+      width: 300px;
+      height: auto;
+      position: absolute;
+      left: -30%;
+      top: -10%;
+    }
+  }
+}
+
+.separate-flip:hover {
+  .flip-card {
+    @include transform(rotateY(180deg) rotate(2deg) scale(1.17));
+    z-index: 2;
+    box-shadow: 2px 2px 10px $flip-card-shadow;
+    border: 10px double $page-heading-bg;
   }
 }

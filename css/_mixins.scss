@@ -4,7 +4,7 @@
 
 @mixin flex {
   display: flex;
-  display: -webkit-box;
+  display: -webkit-box-flex;
   display: -ms-flexbox;
 }
 
@@ -13,6 +13,12 @@
   justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+}
+
+@mixin flex-wrap {
+  @include flex-center;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 }
 
 @mixin flex-column {
@@ -34,6 +40,7 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
 }
+
 @mixin align-content-center {
   align-content: center;
   -ms-flex-line-pack: center;
@@ -77,6 +84,15 @@
   animation: $args;
 }
 
+@mixin preserve-3d {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+@mixin perspective($val) {
+  perspective: $val;
+  -webkit-perspective: $val;
+}
 // NAVBAR
 @mixin navbar__list {
   @include flex-end;
@@ -99,4 +115,10 @@
   font-family: $font-hero-title;
   font-weight: 700;
   font-style: normal;
+}
+
+// PAGE 3
+@mixin backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
