@@ -61,11 +61,17 @@ em {
 .pt-20 {
   padding-top: 20px;
 }
-.pt30 {
+.pt-30 {
   padding-top: 30px;
 }
 .pb-10 {
   padding-bottom: 10px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pb-50 {
+  padding-bottom: 50px;
 }
 .pb-80 {
   padding-bottom: 80px;
@@ -76,22 +82,22 @@ em {
 .mb-10 {
   margin-bottom: 10px;
 }
-.mb15 {
+.mb-15 {
   margin-bottom: 15px;
 }
-.mb20 {
+.mb-20 {
   margin-bottom: 20px;
 }
-.mb30 {
+.mb-30 {
   margin-bottom: 30px;
 }
-.mt15 {
+.mt-15 {
   margin-top: 15px;
 }
 .mt-30 {
   margin-top: 30px;
 }
-.mt60 {
+.mt-60 {
   margin-top: 60px;
 }
 .mt-70px {
@@ -103,23 +109,21 @@ em {
 .f-s20 {
   font-size: 20;
 }
-
 .f-s22 {
   font-size: 22;
 }
-
+.f-s23 {
+  font-size: 23px;
+}
 .f-s25 {
   font-size: 25px;
 }
-
 .f-s28 {
   font-size: 28;
 }
-
 .f-s30 {
   font-size: 30;
 }
-
 .f-s34 {
   font-size: 34px;
 }
@@ -132,15 +136,13 @@ em {
 .fw-550 {
   font-weight: 550;
 }
-
 .fw-600 {
   font-weight: 600;
 }
-
 .fw-bolder {
   font-weight: bolder;
 }
-.br20 {
+.br-20 {
   border-radius: 20px;
 }
 
@@ -296,7 +298,7 @@ em {
   @include bg-gradient($page-gradient-2color, $page-gradient-1color);
   padding: 50px 50px;
   &__options {
-    @include grid-center-4(repeat(2, 425px), repeat(2, 425px), 15px);
+    @include grid-center(repeat(2, 425px), repeat(2, 425px), 15px);
   }
 }
 
@@ -390,7 +392,70 @@ em {
     }
   }
 }
+// PAGE 5 why us
 
-.page5__reason {
-  position: relative;
+.page5 {
+  background-color: $page-gradient-1color;
+  h2 {
+    color: $page5-heading;
+  }
+  &__wrapper {
+    @include grid-center(repeat(4, 400px), repeat(2, 500px), 15px);
+    &-element1 {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    &-element2 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    &-element3 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    &-element4 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    &-element5 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    &-element6 {
+      grid-area: 4 / 1 / 4 / 3;
+    }
+  }
+  &__reason {
+    position: relative;
+    @include filter-brightness(50%);
+    @include transition(500ms filter ease-out);
+    &:hover {
+      @include filter-brightness(100%);
+    }
+    &-img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      @include object-cover;
+    }
+    &-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: auto;
+      height: auto;
+      background-color: $hero-title;
+      padding: 10px;
+      @include box-shadow(10px 10px 0 $page5-text-shadow);
+    }
+  }
+}
+
+// GALLERY
+.page6 {
+  background-color: $page-gradient-1color;
+  h2 {
+    color: $page5-heading;
+  }
+  .gallery {
+    @include flex-center;
+  }
+  #carouselExample {
+    width: 65%;
+  }
 }
