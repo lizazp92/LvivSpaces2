@@ -1,0 +1,93 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+  background-image: url(../img/login-register.jpg);
+  @include page1__bg;
+  color: $login-register-color;
+  text-align: center;
+  margin-top: 200px;
+  font-family: $font-stack;
+}
+
+/* HELPER CLASSES */
+
+.page-wrapper {
+  @include login-register-flex;
+}
+
+.primary-btn {
+  width: 375px;
+  height: 43px;
+  color: $primary-btn-login;
+  background-color: $login-register-btn-bg1;
+  &:hover {
+    background-color: $login-register-btn-bg2;
+  }
+  &:active {
+    background-color: $login-register-btn-bg3;
+  }
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  height: 40px;
+  width: 120px;
+  &:hover {
+    background-color: $login-register-btn-bg1;
+  }
+  &:active {
+    background-color: $login-register-btn-bg2;
+  }
+}
+
+/* NAVBAR */
+
+.main-nav {
+  margin-top: -200px;
+}
+
+/* SIGN IN FORM */
+.questionary {
+  background-color: $form-bg;
+  width: 480px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: -70px;
+  padding: 15px 52px 10px;
+  .sign-in {
+    &__text {
+      &::before {
+        content: "—";
+      }
+      &::after {
+        content: "—";
+      }
+    }
+  }
+}
+
+.formstyle {
+  input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #5d5d5d;
+    padding: 14.5px 24px;
+    box-sizing: border-box;
+    display: inline-block;
+    &::-moz-placeholder {
+      color: $login-register-placeholder;
+    }
+    &[type="radio"] {
+      transform: scale(2);
+    }
+  }
+  span {
+    display: inline-block;
+  }
+  label {
+    display: block;
+  }
+}

@@ -248,3 +248,15 @@
   filter: brightness($val);
   -webkit-filter: brightness($val);
 }
+
+// login-register page
+
+@mixin login-register-flex {
+  @include flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}

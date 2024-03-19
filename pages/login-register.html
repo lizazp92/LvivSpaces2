@@ -24,32 +24,40 @@
       crossorigin="anonymous"
     />
     <!-- END BOOTSTRAP -->
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/keyframes.css" />
     <link rel="stylesheet" href="../css/login-register.css" />
     <title>Login/register</title>
   </head>
   <body>
     <header id="page-header">
       <nav id="page-navigation" class="main-nav">
-        <ul>
-          <li><a href="../index.html" class="link-style">Home</a></li>
-          <li>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="../index.html#about" class="link-style">About us</a>
+          </li>
+          <li class="main-nav__list-item">
             <a href="../index.html#choose-book" class="link-style"
               >Choose and book</a
             >
           </li>
-          <li>
+          <li class="main-nav__list-item">
+            <a href="#../index.html#why-us" class="link-style">Why us</a>
+          </li>
+          <li class="main-nav__list-item">
             <a href="../index.html#gallery" class="link-style">Our gallery</a>
           </li>
-          <li class="bg-green">
+          <li class="bg-green main-nav__list-item">
             <a href="./book-tour.html" class="link-style">Book a tour</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="flexbox">
+      <section class="page-wrapper">
         <form
           action="./save-success.html"
           method="get"
@@ -58,63 +66,58 @@
           target="_blank"
           enctype="text/plain"
         >
-          <div class="signin-div">
+          <section class="questionary mb-15">
             <section id="signin">
-              <h1 class="font-weight-bold m-bottom12">
+              <h1 class="font-weight-bold mb-30 mt-30 pb-10 f-s34 fw-600">
                 <i class="fa-solid fa-arrow-down"></i> Log in
                 <i class="fa-solid fa-arrow-down"></i>
               </h1>
 
-              <label for="email" class="m-bottom12">E-mail</label>
+              <label for="email" class="mb-15 f-s18 fw-600">E-mail</label>
               <input
                 type="email"
                 id="email1"
                 name="email"
                 placeholder="E-mail"
-                class="m-bottom12"
+                class="mb-15"
               />
-              <label for="password" class="m-bottom12">Password</label>
+              <label for="password" class="mb-15 f-s18 fw-600">Password</label>
               <input
                 type="password"
                 id="password1"
                 name="password"
                 placeholder="Password"
-                class="m-bottom12"
+                class="mb-15"
               />
 
               <button
                 type="submit"
-                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500 m-bottom32"
+                class="btn-style primary-btn btn-border-none fw-550 mb-30"
               >
                 Log in
               </button>
 
-              <p class="font-size-12 font-weight-500 m-bottom32 sign-in-text">
-                Or log in with
-              </p>
+              <p class="f-s12 fw-550 mb-30 sign-in-text">Or log in with</p>
               <div class="social-media-buttons">
                 <button type="button" class="btn-style secondary-btn">
-                  <i class="fa-brands fa-google p-right"></i
-                  ><span class="font-weight-700 font-size-13">Google</span>
+                  <i class="fa-brands fa-google pr-10"></i
+                  ><span class="fw-600 f-s13">Google</span>
                 </button>
                 <button type="button" class="btn-style secondary-btn">
-                  <i class="fa-brands fa-apple p-right"></i
-                  ><span class="font-weight-700 font-size-13">Apple ID</span>
+                  <i class="fa-brands fa-apple pr-10"></i
+                  ><span class="fw-600 f-s13">Apple ID</span>
                 </button>
-                <button
-                  type="button"
-                  class="btn-style secondary-btn m-bottom32"
-                >
-                  <i class="fa-brands fa-facebook p-right"></i
-                  ><span class="font-weight-700 font-size-13">Facebook</span>
+                <button type="button" class="btn-style secondary-btn mb-30">
+                  <i class="fa-brands fa-facebook pr-10"></i
+                  ><span class="fw-600 f-s13">Facebook</span>
                 </button>
               </div>
             </section>
-          </div>
+          </section>
         </form>
 
         <!-- REGISTRATION -->
-        <div class="signin-div">
+        <section class="questionary mb-15">
           <form
             action="./save-success.html"
             method="get"
@@ -124,12 +127,12 @@
             enctype="text/plain"
           >
             <section id="register">
-              <h1 class="font-weight-bold m-bottom12">
+              <h1 class="font-weight-bold mb-30 mt-30 pb-10 f-s34 fw-600">
                 <i class="fa-solid fa-arrow-down"></i> Join us
                 <i class="fa-solid fa-arrow-down"></i>
               </h1>
 
-              <label for="username" class="m-bottom12"
+              <label for="username" class="mb-15 f-s18 fw-600"
                 >First and last name</label
               >
               <input
@@ -137,30 +140,30 @@
                 id="name"
                 name="name"
                 placeholder="First and last name"
-                class="m-bottom12"
+                class="mb-15"
               />
-              <label for="username" class="m-bottom12">Username</label>
+              <label for="username" class="mb-15 f-s18 fw-600">Username</label>
               <input
                 type="text"
                 id="username"
                 name="username"
                 placeholder="Username"
-                class="m-bottom12"
+                class="mb-15"
               />
-              <label for="email" class="m-bottom12">E-mail</label>
+              <label for="email" class="mb-15 f-s18 fw-600">E-mail</label>
               <input
                 type="email"
                 id="email2"
                 name="email"
                 placeholder="E-mail"
-                class="m-bottom32"
+                class="mb-30"
               />
               <span
                 ><input
                   type="radio"
                   id="workplace"
                   name="workplace"
-                  class="m-bottom12 radiospan"
+                  class="mb-15 radiospan"
                 />
                 A workplace</span
               >
@@ -169,37 +172,34 @@
                   type="radio"
                   id="office"
                   name="workplace"
-                  class="m-bottom12 radiospan"
+                  class="mb-15 radiospan"
                 />
                 Personal office</span
               >
-              <span class="m-bottom32"
-                ><input
-                  type="radio"
-                  id="team"
-                  name="workplace"
-                  class="m-bottom12"
-                />
+              <span class="mb-30"
+                ><input type="radio" id="team" name="workplace" class="mb-15" />
                 Team (Up to 8)</span
               >
-              <label for="password" class="m-bottom12">Create a password</label>
+              <label for="password" class="mb-15 f-s18 fw-600"
+                >Create a password</label
+              >
               <input
                 type="password"
                 id="password2"
                 name="password"
                 placeholder="Password"
-                class="m-bottom12"
+                class="mb-15"
               />
 
               <button
                 type="submit"
-                class="btn-style primary-btn signin-form-btn btn-border-none font-weight-500 m-bottom32"
+                class="btn-style primary-btn btn-border-none fw-550 mb-30"
               >
                 Register
               </button>
             </section>
           </form>
-        </div>
+        </section>
       </section>
     </main>
   </body>
