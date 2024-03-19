@@ -1,47 +1,13 @@
 body {
-  background-image: url(../img/book-tour.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url(../img/book-tour.jpg);
   color: rgb(65, 65, 65);
   text-align: center;
-
-  padding-top: 200px;
+  margin-top: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* HELPER CLASSES */
-
-.flexbox {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-}
-
-.link-style {
-  text-decoration: none;
-  color: #3d2e18;
-  font-weight: bolder;
-}
-
-.btn-style {
-  font-family: inherit;
   font-size: 16px;
-  border-style: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-.primary-btn {
-  color: #000000;
-  background-color: #359b41;
-  width: 183px;
-  height: 43px;
-  border-radius: 4px;
-  border: 1px solid #000000;
-  padding: 12px 12px 12px 18px;
 }
 
 .secondary-btn {
@@ -52,140 +18,50 @@ button {
   width: 120px;
 }
 
-.btn-border-none {
-  border: none;
-}
-
-.p-right {
-  padding-right: 10px;
-}
-
-.m-bottom32 {
-  margin-bottom: 32px;
-}
-
-.m-bottom12 {
-  margin-bottom: 12px;
-}
-
-.font-weight-700 {
-  font-weight: 700;
-}
-.font-weight-500 {
-  font-weight: 500;
-}
-
-.font-size-12 {
-  font-size: 12px;
-}
-
-.font-size-13 {
-  font-size: 13px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-/* NAVBAR */
 .main-nav {
-  background-color: rgba(101, 87, 74, 0.8);
-  position: fixed;
-  z-index: 2;
-  margin-top: -200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin-top: -120px;
 }
 
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 15px;
-  margin-left: -500px;
-}
-
-.main-nav li {
-  background-color: #97a3b380;
-  margin-right: 30px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid rgb(48, 41, 41);
-}
-
-.main-nav li:hover {
-  background-color: #61697480;
-  padding: 13px;
-  transition: 0.5s;
-}
-
-.main-nav .bg-green,
-form .bg-green {
-  background-color: #39a42980;
-}
-.main-nav .bg-green:hover,
-form .bg-green:hover {
-  background-color: #18a10380;
-}
-
-/* FORM */
 .book-tour-page {
-  background-color: #fcfcfcca;
+  background-color: rgba(252, 252, 252, 0.7921568627);
   border-radius: 4px;
-  margin: auto;
+  margin: 120px auto 50px;
   width: 600px;
   padding: 30px;
-  margin-bottom: 50px;
+}
+.book-tour-page label {
+  display: block;
+}
+.book-tour-page span {
+  display: inline-block;
+}
+.book-tour-page textarea {
+  width: 100%;
+  padding: 10px 15px;
 }
 
-h1 {
-  font-size: 36px;
-  padding-bottom: 10px;
-  font-weight: 600;
-}
-
-input:focus {
-  outline: none;
-}
-input:invalid {
-  border: 1px solid red;
-}
-
-input[type="submit"],
-input[type="reset"] {
-  cursor: pointer;
-}
-
-input,
-select {
+input, select {
   width: 100%;
   border-radius: 8px;
   border: 1px solid #5d5d5d;
-  padding: 14.5px 24px;
+  padding: 10px 15px;
   box-sizing: border-box;
 }
-input:hover,
-input:focus {
+input:focus, select:focus {
+  outline: none;
+}
+input:invalid, select:invalid {
+  border: 1px solid red;
+}
+input[type=submit], select[type=submit], input[type=reset], select[type=reset] {
+  cursor: pointer;
+}
+input:hover, select:hover, input:focus, select:focus {
   background-color: #b3d0b6;
   border: 2px dashed rgb(68, 116, 7);
 }
-textarea {
-  width: 100%;
-}
-
-form input::-moz-placeholder {
+input::-moz-placeholder, select::-moz-placeholder {
   color: #797979;
 }
 
-span {
-  display: inline-block;
-}
-label {
-  display: block;
-  font-size: 16;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
+/*# sourceMappingURL=book-tour.css.map */

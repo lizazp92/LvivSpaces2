@@ -173,6 +173,7 @@ em {
 
 .page1 {
   @include page1__bg;
+  background-image: url(../img/hero-photo.png);
   color: $hero-title;
   text-align: center;
   &__content {

@@ -1,0 +1,73 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+  @include page1__bg;
+  background-image: url(../img/book-tour.jpg);
+  color: rgb(65, 65, 65);
+  text-align: center;
+  margin-top: 0;
+  font-family: $font-stack;
+  font-size: 16px;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  height: 40px;
+  width: 120px;
+}
+
+.main-nav {
+  margin-top: -120px;
+}
+
+// FORM
+
+.book-tour-page {
+  background-color: $form-bg;
+  border-radius: 4px;
+  margin: 120px auto 50px;
+  width: 600px;
+  padding: 30px;
+  label {
+    display: block;
+  }
+  span {
+    display: inline-block;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px 15px;
+  }
+}
+
+input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #5d5d5d;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+  &:invalid {
+    border: 1px solid red;
+  }
+  &[type="submit"],
+  &[type="reset"] {
+    cursor: pointer;
+  }
+  &:hover,
+  &:focus {
+    background-color: #b3d0b6;
+    border: 2px dashed rgb(68, 116, 7);
+  }
+  &::-moz-placeholder {
+    color: #797979;
+  }
+}
+select {
+  @extend input;
+}

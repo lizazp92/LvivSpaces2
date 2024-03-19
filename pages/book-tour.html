@@ -25,33 +25,41 @@
     />
     <!-- END BOOTSTRAP -->
     <link rel="stylesheet" href="../css/reset.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/keyframes.css" />
     <link rel="stylesheet" href="../css/book-tour.css" />
 
     <title>Book a tour</title>
   </head>
   <body>
     <main>
-      <header>
+      <header id="page-header">
         <nav id="page-navigation" class="main-nav">
-          <ul>
-            <li><a href="../index.html" class="link-style">Home</a></li>
-            <li>
-              <a href="../index.html#about" class="link-style">About us</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="#about" class="link-style">About us</a>
             </li>
-            <li>
-              <a href="../index.html#choose-book" class="link-style"
-                >Choose and book</a
+            <li class="main-nav__list-item">
+              <a href="#choose-book" class="link-style">Choose and book</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#why-us" class="link-style">Why us</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#gallery" class="link-style">Our gallery</a>
+            </li>
+            <li class="bg-green main-nav__list-item">
+              <a href="./pages/login-register.html" class="link-style"
+                >Join us</a
               >
-            </li>
-            <li class="bg-green">
-              <a href="./login-register.html" class="link-style">Join us</a>
             </li>
           </ul>
         </nav>
       </header>
+
       <section id="book-tour" class="book-tour-page">
-        <h1 class="m-bottom12">Let's get in touch</h1>
+        <h1 class="mb-15 f-s34 pb-10 fw-600">Let's get in touch</h1>
         <form
           action="./save-success.html"
           method="get"
@@ -59,8 +67,8 @@
           target="_blank"
           enctype="text/plain"
         >
-          <div class="m-bottom12">
-            <label for="name">Your name:* </label>
+          <div class="mb-15">
+            <label for="name" class="fw-600 mb-10">Your name:* </label>
             <input
               type="text"
               id="name"
@@ -71,8 +79,10 @@
               required
             />
           </div>
-          <div class="m-bottom12">
-            <label for="name">Company name (for a team): </label>
+          <div class="mb-15">
+            <label for="name" class="fw-600 mb-10"
+              >Company name (for a team):
+            </label>
             <input
               type="text"
               id="company-name"
@@ -81,8 +91,10 @@
             />
           </div>
 
-          <div class="m-bottom12">
-            <label for="name">Company's website (for a team): </label>
+          <div class="mb-15">
+            <label for="name" class="fw-600 mb-10"
+              >Company's website (for a team):
+            </label>
             <input
               type="url"
               id="company-website"
@@ -91,8 +103,8 @@
             />
           </div>
 
-          <div class="m-bottom12">
-            <label for="email">Your e-mail:* </label>
+          <div class="mb-15">
+            <label for="email" class="fw-600 mb-10">Your e-mail:* </label>
             <input
               type="email"
               id="email"
@@ -102,8 +114,8 @@
             />
           </div>
 
-          <div class="m-bottom12">
-            <label for="phone">Your phone:* </label>
+          <div class="mb-15">
+            <label for="phone" class="fw-600 mb-10">Your phone:* </label>
             <input
               type="tel"
               id="phone"
@@ -113,8 +125,8 @@
             />
           </div>
 
-          <div class="m-bottom12">
-            <label for="preffered-language"
+          <div class="mb-15">
+            <label for="preffered-language" class="fw-600 mb-10"
               >Choose a preffered language:* </label
             ><span>
               Ukrainian
@@ -128,20 +140,22 @@
               <input type="radio" id="english" name="language" value="english"
             /></span>
           </div>
-          <div class="m-bottom12">
-            <label for="coworking-selection">Select your preference:* </label>
+          <div class="mb-15">
+            <label for="coworking-selection" class="fw-600 mb-10"
+              >Select your preference:*
+            </label>
             <select
               id="coworking-selection"
               name="coworking_preference"
               required
             >
-              <optgroup label="Desk/office">
+              <optgroup label="Desk/office" class="fw-600 mb-10">
                 <option value="flexible-desk">Flexible desk</option>
                 <option value="dedicated-desk">Dedicated desk</option>
                 <option value="private-office">Private office</option>
                 <option value="meeting-room">Meeting room</option>
               </optgroup>
-              <optgroup label="Passes">
+              <optgroup label="Passes" class="fw-600 mb-10">
                 <option value="day-pass">Day Pass</option>
                 <option value="week-pass">Week pass</option>
                 <option value="other">Other</option>
@@ -149,8 +163,8 @@
             </select>
           </div>
 
-          <div class="m-bottom12">
-            <label for="adult">How many people:* </label>
+          <div class="mb-15">
+            <label for="adult" class="fw-600 mb-10">How many people:* </label>
             <input
               type="number"
               id="team-size"
@@ -162,8 +176,8 @@
             />
           </div>
 
-          <div class="m-bottom12">
-            <label for="tour-date">Choose a date:* </label>
+          <div class="mb-15">
+            <label for="tour-date" class="fw-600 mb-10">Choose a date:* </label>
             <input
               type="date"
               id="date"
@@ -173,13 +187,13 @@
             />
           </div>
 
-          <div class="m-bottom12">
-            <label for="tour-time">Choose time: </label>
+          <div class="mb-15">
+            <label for="tour-time" class="fw-600 mb-10">Choose time: </label>
             <input type="time" id="time" name="Time" />
           </div>
 
-          <div class="m-bottom12">
-            <label for="message">Anything else?</label>
+          <div class="mb-15">
+            <label for="message" class="fw-600 mb-10">Anything else?</label>
             <textarea
               id="message"
               name="visitor_message"
@@ -189,8 +203,10 @@
             ></textarea>
           </div>
 
-          <div class="m-bottom12">
-            <label for="newsletter">Let me know about future discounts </label>
+          <div class="mb-15">
+            <label for="newsletter" class="fw-600 mb-10"
+              >Let me know about future discounts
+            </label>
             <input type="checkbox" id="check" name="check" />
           </div>
           <input
