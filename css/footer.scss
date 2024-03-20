@@ -7,8 +7,8 @@
   @include flex-space-around;
   @include items-center;
   @include align-content-center;
-  margin: 50px 0;
-  padding: 20px 0;
+  margin: 3.1rem 0;
+  padding: 1.25rem 0;
   background-color: $footer-bg;
 
   &__wrapper {
@@ -39,7 +39,7 @@
     &-bg-icon {
       width: 70px;
       height: 70px;
-      border-radius: 35px;
+      border-radius: 2.1rem;
       background-color: $footer-icon-bg;
       @include flex-center;
       @include items-center;

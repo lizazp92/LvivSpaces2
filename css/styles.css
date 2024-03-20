@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta&family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Satisfy&display=swap");
 body {
-  margin-top: 11.5vh;
+  margin-top: 4.1rem;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../img/body-background1.jpg);
   background-position: center;
@@ -210,7 +210,7 @@ em {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 4.1rem;
+  padding-top: 5vw;
 }
 .page1__content-title {
   font-size: 5rem;

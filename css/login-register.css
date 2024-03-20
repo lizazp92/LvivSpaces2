@@ -4,9 +4,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: rgb(65, 65, 65);
+  color: rgb(63, 40, 40);
   text-align: center;
-  margin-top: 200px;
+  margin-top: 12.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,8 +38,8 @@ body {
 
 .secondary-btn {
   background-color: transparent;
-  border: 1px solid #000000;
-  border-radius: 40px;
+  border: 1px solid black;
+  border-radius: 2.5rem;
   height: 40px;
   width: 120px;
 }
@@ -52,17 +52,17 @@ body {
 
 /* NAVBAR */
 .main-nav {
-  margin-top: -200px;
+  margin-top: -12.5rem;
 }
 
 /* SIGN IN FORM */
 .questionary {
   background-color: rgba(252, 252, 252, 0.7921568627);
   width: 480px;
-  border-radius: 30px;
+  border-radius: 1.8rem;
   overflow: hidden;
-  margin-top: -70px;
-  padding: 15px 52px 10px;
+  margin-top: -4.3rem;
+  padding: 1rem 3.1rem 0.6rem;
 }
 .questionary .sign-in__text::before {
   content: "—";
@@ -73,9 +73,9 @@ body {
 
 .formstyle input {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid #5d5d5d;
-  padding: 14.5px 24px;
+  padding: 1rem 1.5rem;
   box-sizing: border-box;
   display: inline-block;
 }

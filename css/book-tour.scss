@@ -4,33 +4,32 @@
 body {
   @include page1__bg;
   background-image: url(../img/book-tour.jpg);
-  color: rgb(65, 65, 65);
+  color: $form-color;
   text-align: center;
   margin-top: 0;
   font-family: $font-stack;
-  font-size: 16px;
 }
 
 .secondary-btn {
   background-color: transparent;
-  border: 1px solid #000000;
-  border-radius: 40px;
+  border: $border-black;
+  border-radius: 2.5rem;
   height: 40px;
   width: 120px;
 }
 
 .main-nav {
-  margin-top: -120px;
+  margin-top: -7.5rem;
 }
 
 // FORM
 
 .book-tour-page {
   background-color: $form-bg;
-  border-radius: 4px;
-  margin: 120px auto 50px;
+  border-radius: 0.25rem;
+  margin: 7.5rem auto 3.1rem;
   width: 600px;
-  padding: 30px;
+  padding: 1.8rem;
   label {
     display: block;
   }
@@ -39,21 +38,21 @@ body {
   }
   textarea {
     width: 100%;
-    padding: 10px 15px;
+    padding: 0.6rem 0.9rem;
   }
 }
 
 input {
   width: 100%;
-  border-radius: 8px;
-  border: 1px solid #5d5d5d;
-  padding: 10px 15px;
+  border-radius: 0.5rem;
+  border: 1px solid $form-input-border;
+  padding: 0.6rem 0.9rem;
   box-sizing: border-box;
   &:focus {
     outline: none;
   }
   &:invalid {
-    border: 1px solid red;
+    border: 1px solid $form-input-invalid;
   }
   &[type="submit"],
   &[type="reset"] {
@@ -61,11 +60,8 @@ input {
   }
   &:hover,
   &:focus {
-    background-color: #b3d0b6;
-    border: 2px dashed rgb(68, 116, 7);
-  }
-  &::-moz-placeholder {
-    color: #797979;
+    background-color: $form-input-bg;
+    border: 2px dashed $form-input-border;
   }
 }
 select {

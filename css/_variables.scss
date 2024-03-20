@@ -12,6 +12,8 @@ $primary-btn-active: #474a40;
 $page-gradient-1color: #71574c;
 $page-gradient-2color: #97a3b3;
 
+$border-black: 1px solid black;
+
 // PAGE 1
 
 $hero-title: white;
@@ -65,12 +67,16 @@ $footer-input: #bcd0e5;
 $footer-input-focus: #7c957b;
 
 //book-tour page
-
+$form-color: rgb(65, 65, 65);
 $form-bg: #fcfcfcca;
+$form-input-border: #5d5d5d;
+$form-input-invalid: red;
+$form-input-bg: #b3d0b6;
+$form-input-border: rgb(68, 116, 7);
 
 //login-register page
 $primary-btn-login: #ffffff;
-$login-register-color: rgb(65, 65, 65);
+$login-register-color: rgb(63, 40, 40);
 $login-register-btn-bg1: #359b41;
 $login-register-btn-bg2: #047211;
 $login-register-btn-bg3: #62b96c;

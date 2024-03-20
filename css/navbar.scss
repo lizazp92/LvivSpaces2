@@ -6,10 +6,10 @@
 .main-nav {
   @include flex-space-around;
   background-color: $navbar-bg;
-  padding: 5px 50px;
+  padding: 0.3rem 3.1rem;
   position: fixed;
   z-index: 3;
-  margin-top: -68px;
+  margin-top: -4.1rem;
   width: 100%;
 
   &__list {
@@ -17,12 +17,12 @@
 
     &-item {
       background-color: $navbar-item-bg;
-      margin: 10px 15px;
-      padding: 10px;
-      border-radius: 5px;
+      margin: 0.6rem 0.9rem;
+      padding: 0.6rem;
+      border-radius: 0.3rem;
       border: 1px solid $navbar-item-border;
-      @include transition(background-color 0.5s ease-in);
-      @include transition(scale 0.5s ease-in-out);
+      @include transition(background-color 500ms ease-in);
+      @include transition(scale 500ms ease-in-out);
 
       &:hover {
         background-color: $navbar-item-hover;
@@ -34,7 +34,7 @@
   &__form {
     border: none;
     background-color: transparent;
-    margin-left: 130px;
+    margin-left: 9rem;
   }
 
   & input[type="text"] {
@@ -47,7 +47,7 @@
   .bg-green {
     background-color: $join-us;
     @include transition(500ms all ease-out);
-    @include animation(wiggle 3s ease-out infinite);
+    @include animation(wiggle 3000ms ease-out infinite);
     &:hover {
       background-color: $join-us-hover;
     }
