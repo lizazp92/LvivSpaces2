@@ -8,7 +8,7 @@ body {
   background-size: 25%;
 }
 
-.section-position {
+.page2, .page1 {
   height: 100vh;
   width: 100%;
 }
@@ -173,7 +173,7 @@ em {
   border-radius: 1.25em;
 }
 
-.primary-btn {
+.primary-btn, .option__btn-buy {
   background-color: #ae832d;
   border-style: none;
   padding: 10px 20px;
@@ -186,15 +186,15 @@ em {
   -o-transition: 500ms color ease-in;
   transition: 500ms color ease-in;
 }
-.primary-btn a {
+.primary-btn a, .option__btn-buy a {
   text-decoration: none;
   color: inherit;
 }
-.primary-btn:hover {
+.primary-btn:hover, .option__btn-buy:hover {
   background-color: #1d9e51;
   color: white;
 }
-.primary-btn:active {
+.primary-btn:active, .option__btn-buy:active {
   background-color: #474a40;
 }
 
@@ -233,8 +233,6 @@ em {
   background: -webkit-linear-gradient(#71574c, #97a3b3);
   background: -o-linear-gradient(#71574c, #97a3b3);
   background: linear-gradient(#71574c, #97a3b3);
-}
-.page2__wrapper {
   display: flex;
   display: -webkit-box-flex;
   display: -ms-flexbox;
@@ -516,7 +514,7 @@ em {
 .page5__wrapper-element6 {
   grid-area: 4/1/4/3;
 }
-.page5__reason {
+.page5__reason, .page5__wrapper-element1, .page5__wrapper-element2, .page5__wrapper-element3, .page5__wrapper-element4, .page5__wrapper-element5, .page5__wrapper-element6 {
   position: relative;
   filter: brightness(50%);
   -webkit-filter: brightness(50%);
@@ -524,7 +522,7 @@ em {
   -o-transition: 500ms filter ease-out;
   transition: 500ms filter ease-out;
 }
-.page5__reason:hover {
+.page5__reason:hover, .page5__wrapper-element1:hover, .page5__wrapper-element2:hover, .page5__wrapper-element3:hover, .page5__wrapper-element4:hover, .page5__wrapper-element5:hover, .page5__wrapper-element6:hover {
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
 }
