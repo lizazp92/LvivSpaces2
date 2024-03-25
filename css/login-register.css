@@ -24,8 +24,9 @@ body {
 }
 
 .primary-btn {
-  width: 375px;
+  width: 100%;
   height: 43px;
+  padding: 1rem 1.5rem;
   color: #ffffff;
   background-color: #359b41;
 }
@@ -42,6 +43,7 @@ body {
   border-radius: 2.5rem;
   height: 40px;
   width: 120px;
+  margin: 0.5rem 0;
 }
 .secondary-btn:hover {
   background-color: #359b41;
@@ -58,7 +60,7 @@ body {
 /* SIGN IN FORM */
 .questionary {
   background-color: rgba(252, 252, 252, 0.7921568627);
-  width: 480px;
+  width: 40vw;
   border-radius: 1.8rem;
   overflow: hidden;
   margin-top: -4.3rem;
@@ -83,13 +85,24 @@ body {
   color: #797979;
 }
 .formstyle input[type=radio] {
-  transform: scale(2);
+  transform: scale(1.5);
+  margin: 1rem 0;
 }
 .formstyle span {
   display: inline-block;
 }
 .formstyle label {
   display: block;
+}
+
+@media (max-width: 600px) {
+  .page-wrapper {
+    display: block;
+  }
+  .questionary {
+    width: 90vw;
+    margin: 0 auto 2rem;
+  }
 }
 
 /*# sourceMappingURL=login-register.css.map */
