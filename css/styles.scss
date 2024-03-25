@@ -9,20 +9,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Satisfy&display=swap");
 
 body {
-  margin-top: 68px;
+  margin-top: 4.1rem;
   font-family: $font-stack;
   background-image: url(../img/body-background1.jpg);
   background-position: center;
   background-size: 25%;
 }
 
-.section-position {
-  height: 100vh;
+%section-position {
+  min-height: 100vh;
   width: 100%;
 }
 
 .heading-transparent {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bolder;
   text-align: center;
   font-stretch: narrower;
@@ -31,12 +31,8 @@ body {
 
 .page-heading {
   @extend .heading-transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
   background-color: $page-heading-bg;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 0 4rem 0;
 }
 
 strong {
@@ -57,91 +53,98 @@ em {
 // PADDINGS
 
 .pr-10 {
-  padding-right: 10px;
+  padding-right: 0.6rem;
+}
+.pt-10 {
+  padding-top: 0.6rem;
 }
 .pt-15 {
-  padding-top: 15px;
+  padding-top: 0.9rem;
 }
 .pt-20 {
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 .pt-30 {
-  padding-top: 30px;
+  padding-top: 1.8rem;
 }
 .pb-10 {
-  padding-bottom: 10px;
+  padding-bottom: 0.6rem;
 }
 .pb-30 {
-  padding-bottom: 30px;
+  padding-bottom: 1.8rem;
 }
 .pb-50 {
-  padding-bottom: 50px;
+  padding-bottom: 3.1rem;
 }
 .pb-80 {
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
 }
 
 // MARGINS
 
 .mb-10 {
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
 }
 .mb-15 {
-  margin-bottom: 15px;
+  margin-bottom: 0.9rem;
 }
 .mb-20 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 1.8rem;
 }
+
 .mt-15 {
-  margin-top: 15px;
+  margin-top: 0.9rem;
 }
 .mt-30 {
-  margin-top: 30px;
+  margin-top: 1.8rem;
+}
+.mt-23 {
+  margin-top: 23px;
 }
 .mt-60 {
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
-.mt-70px {
-  margin-top: -70px;
+.mt-70 {
+  margin-top: -4.3rem;
 }
 
 // FONT SIZES
 
 .f-s12 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 .f-s13 {
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 .f-s18 {
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 .f-s20 {
-  font-size: 20;
+  font-size: 1.25rem;
 }
 .f-s22 {
-  font-size: 22;
+  font-size: 1.37rem;
 }
 .f-s23 {
-  font-size: 23px;
+  font-size: 1.4rem;
 }
 .f-s25 {
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 .f-s28 {
-  font-size: 28;
+  font-size: 1.75rem;
 }
 .f-s30 {
-  font-size: 30;
+  font-size: 1.87rem;
 }
 .f-s34 {
-  font-size: 34px;
+  font-size: 2.1rem;
 }
 .f-s50 {
-  font-size: 50px;
+  font-size: 3.1rem;
 }
 
 // FONT WEIGHT
@@ -164,7 +167,7 @@ em {
 .primary-btn {
   background-color: $page-heading-bg;
   border-style: none;
-  padding: 10px 20px;
+  padding: 0.6rem 1.25rem;
   font-family: inherit;
   color: $primary-btn-color;
   @include transition(500ms background-color linear);
@@ -173,12 +176,10 @@ em {
     text-decoration: none;
     color: inherit;
   }
-  &:hover {
+  &:hover,
+  &:active {
     background-color: $primary-btn-hover;
     color: $primary-btn-hover-color;
-  }
-  &:active {
-    background-color: $primary-btn-active;
   }
 }
 
@@ -189,21 +190,45 @@ em {
   background-image: url(../img/hero-photo.png);
   color: $hero-title;
   text-align: center;
+  @extend %section-position;
   &__content {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5%;
+    padding-top: 5rem;
+
     &-title {
       @include page1__title-font;
-      margin-bottom: 20px;
-      @include animation(flow 5s forwards infinite);
+      margin-bottom: 0.3em;
+      @include animation(flow 5000ms forwards infinite);
     }
     p {
       font-family: $font-hero-text;
       border: 1px solid $hero-text-border;
-      padding: 20px 10px;
+      padding: 1.25rem 0.6rem;
       background-color: $hero-text-bg;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .page1 {
+    &__content {
+      padding-top: 50%;
+      width: 90vw;
+      &-title {
+        animation: none;
+        color: $page-heading-bg;
+      }
+    }
+  }
+}
+
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page1 {
+    &__content {
+      padding-top: 30%;
+      width: 90vw;
     }
   }
 }
@@ -212,26 +237,27 @@ em {
 
 .page2 {
   @include bg-gradient($page-gradient-1color, $page-gradient-2color);
-  &__wrapper {
-    @include flex-center;
-    @include items-center;
-  }
+  @include flex-center;
+  @include items-center;
+
   &__img-relative {
     position: relative;
-    left: -70px;
+    left: -68px;
   }
   &__img1,
   &__img2 {
     width: 26%;
     @include transition(500ms transform ease-in-out 100ms);
-    &:hover {
+    &:hover,
+    &:active {
       @include transform(scale(1.2));
       z-index: 1;
     }
   }
 
   &__content {
-    width: 480px;
+    width: 35vw;
+    @include fit-content;
     @include self-center;
     line-height: 130%;
   }
@@ -239,15 +265,44 @@ em {
     &-link {
       color: $page-link;
       display: block;
-      margin: 20px;
+      margin: 1.25rem;
       text-align: center;
       @include transition(500ms transform ease-out);
       @include transition(200ms color ease-in);
-      &:hover {
+      &:hover,
+      &:active {
         color: $page2-link-hover;
         @include transform(
           translateX(10px) rotate(10deg) translateY(5px) scale(1.5)
         );
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-position {
+    display: none;
+  }
+  .page2 {
+    display: block;
+    background-image: url(../img/section2-1.jpg);
+    background-position: center;
+
+    &__img1,
+    &__img2 {
+      display: none;
+    }
+    &__content {
+      background-color: rgba(255, 255, 255, 0.329);
+      width: 100vw;
+      margin: 0 auto 2rem;
+      padding: 10% 5% 0;
+    }
+    &__stats {
+      &-link {
+        padding: 3rem 0 3rem;
+        font-size: 2rem;
       }
     }
   }
@@ -265,7 +320,7 @@ em {
 .flip-card {
   width: 250px;
   height: 200px;
-  margin: 12px;
+  margin: 0.75rem;
   background-color: $flip-card-bg;
   color: $flip-card-color;
   @include flex-column;
@@ -288,7 +343,7 @@ em {
     @include transform(rotateY(180deg));
     position: relative;
     &-img {
-      width: 300px;
+      max-width: 300px;
       height: auto;
       position: absolute;
       left: -30%;
@@ -297,7 +352,8 @@ em {
   }
 }
 
-.separate-flip:hover {
+.separate-flip:hover,
+.separate-flip:active {
   .flip-card {
     @include transform(rotateY(180deg) rotate(2deg) scale(1.17));
     z-index: 2;
@@ -306,38 +362,53 @@ em {
   }
 }
 
+@media (max-width: 600px) {
+  .page3 {
+    margin-top: -35px;
+  }
+  .page-heading {
+    margin: 0 1rem 1rem;
+  }
+}
+
 //  PAGE 4 CHOOSE-BOOK
 
 .page4 {
+  @extend %section-position;
   @include bg-gradient($page-gradient-2color, $page-gradient-1color);
-  padding: 50px 50px;
   &__options {
-    @include grid-center(repeat(2, 425px), repeat(2, 425px), 15px);
+    @include grid-center(repeat(2, auto), repeat(2, auto), 3rem);
+    margin: 0 auto;
+    width: 60vw;
   }
 }
 
 .option {
-  min-width: 400px;
-  min-height: 400px;
+  width: 100%;
+  height: 390px;
   background-color: $option-bg;
-  margin: 25px;
+
   &__card {
     position: relative;
-    &:hover {
+    &:hover,
+    &:active {
       .option__card-img,
-      .option__card-badge-discount {
+      .option__card-badge-discount,
+      .option__card-badge-new {
         opacity: 0.3;
       }
       .option__card-description {
         opacity: 1;
         visibility: visible;
+        max-height: fit-content;
       }
     }
 
     &-description {
       position: absolute;
-      top: 32%;
-      left: 2%;
+      top: 60px;
+      left: 5px;
+      margin: 0 20px;
       line-height: 1.2;
       visibility: hidden;
       opacity: 0;
@@ -347,7 +418,6 @@ em {
     }
     &-img {
       width: 100%;
-      height: 100%;
       @include object-cover;
       height: 300px;
     }
@@ -357,7 +427,7 @@ em {
       left: 0;
       background-color: $option-badge-new;
       color: $hero-title;
-      padding: 10px;
+      padding: 0.6rem;
     }
     &-badge-discount {
       position: absolute;
@@ -365,7 +435,7 @@ em {
       right: -55px;
       background-color: $option-badge-discount;
       color: $hero-title;
-      padding: 5px 50px;
+      padding: 5px 3.1rem;
       @include transform(rotateZ(50deg));
     }
   }
@@ -378,15 +448,19 @@ em {
 .option__btn {
   position: relative;
   &-buy {
-    width: 300px;
-    height: 40px;
+    @extend .primary-btn;
+    width: 75%;
+    height: auto;
     background-color: $option-btn-bg;
     @include box-shadow(4px 4px 1px $option-btn-shadow);
     position: absolute;
-    top: 5px;
-    left: 50px;
+    top: 10px;
+    left: 10%;
+    margin: 0 0.6rem;
+
     @include transition(400ms all ease-out);
-    &:hover {
+    &:hover,
+    &:active {
       @include transform(scale(1.1));
     }
   }
@@ -399,46 +473,78 @@ em {
     text-decoration: none;
     color: $book-tour-link;
     @include transition(500ms all ease-out);
-    &:hover {
+    &:hover,
+    &:active {
       color: $book-tour-link-hover;
       @include transform(scale(1.5));
       outline: dotted $book-tour-outline-hover;
     }
   }
 }
+
+@media (max-width: 600px) {
+  .page4__options {
+    display: block;
+    width: 90vw;
+
+    .option {
+      margin-bottom: 2rem;
+    }
+  }
+}
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page4__options {
+    width: 85vw;
+    grid-gap: 2rem;
+  }
+}
+
 // PAGE 5 why us
 
 .page5 {
   background-color: $page-gradient-1color;
+  @extend %section-position;
   h2 {
     color: $page5-heading;
   }
   &__wrapper {
-    @include grid-center(repeat(4, 400px), repeat(2, 500px), 15px);
+    @include grid-center(repeat(4, auto), repeat(2, auto), 0.5rem);
+    width: 70vw;
+    margin: 0 auto;
     &-element1 {
       grid-area: 1 / 1 / 2 / 3;
+      @extend .page5__reason;
     }
     &-element2 {
       grid-area: 2 / 1 / 3 / 2;
+      @extend .page5__reason;
     }
     &-element3 {
       grid-area: 2 / 2 / 3 / 3;
+      @extend .page5__reason;
     }
     &-element4 {
       grid-area: 3 / 1 / 4 / 2;
+      @extend .page5__reason;
     }
     &-element5 {
       grid-area: 3 / 2 / 4 / 3;
+      @extend .page5__reason;
     }
     &-element6 {
       grid-area: 4 / 1 / 4 / 3;
+      @extend .page5__reason;
     }
   }
+
   &__reason {
+    width: 100%;
+    height: 350px;
     position: relative;
     @include filter-brightness(50%);
     @include transition(500ms filter ease-out);
-    &:hover {
+    &:hover,
+    &:active {
       @include filter-brightness(100%);
     }
     &-img {
@@ -449,17 +555,37 @@ em {
     }
     &-text {
       position: absolute;
-      bottom: 20px;
-      left: 20px;
+      bottom: 1.25rem;
+      left: 1.25rem;
       width: auto;
       height: auto;
       background-color: $hero-title;
-      padding: 10px;
+      padding: 0.6rem;
       @include box-shadow(10px 10px 0 $page5-text-shadow);
     }
   }
 }
 
+@media (max-width: 600px) {
+  .page5__wrapper {
+    display: block;
+    width: 90vw;
+
+    &-element1,
+    &-element2,
+    &-element3,
+    &-element4,
+    &-element5,
+    &-element6 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page5__wrapper {
+    width: 90vw;
+  }
+}
 // GALLERY
 .page6 {
   background-color: $page-gradient-1color;
@@ -471,5 +597,24 @@ em {
   }
   #carouselExample {
     width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page6 {
+    h2 {
+      margin-top: -50px;
+    }
+    #carouselExample {
+      width: 90vw;
+    }
+  }
+}
+
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page6 {
+    #carouselExample {
+      width: 90vw;
+    }
   }
 }

@@ -1,20 +1,20 @@
 /* Navigation bar with flexbox*/
 .main-nav {
   display: flex;
-  display: -webkit-box;
+  display: -webkit-box-flex;
   display: -ms-flexbox;
   justify-content: space-around;
   -ms-flex-pack: distribute;
   background-color: rgba(101, 87, 74, 0.8);
-  padding: 5px 50px;
+  padding: 0.3rem 3.1rem;
   position: fixed;
   z-index: 3;
-  margin-top: -68px;
+  margin-top: -4.1rem;
   width: 100%;
 }
 .main-nav__list {
   display: flex;
-  display: -webkit-box;
+  display: -webkit-box-flex;
   display: -ms-flexbox;
   justify-content: flex-end;
   -webkit-box-pack: end;
@@ -26,16 +26,16 @@
 }
 .main-nav__list-item {
   background-color: rgba(151, 163, 179, 0.5019607843);
-  margin: 10px 15px;
-  padding: 10px;
-  border-radius: 5px;
+  margin: 0.6rem 0.9rem;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
   border: 1px solid rgb(48, 41, 41);
-  -webkit-transition: background-color 0.5s ease-in;
-  -o-transition: background-color 0.5s ease-in;
-  transition: background-color 0.5s ease-in;
-  -webkit-transition: scale 0.5s ease-in-out;
-  -o-transition: scale 0.5s ease-in-out;
-  transition: scale 0.5s ease-in-out;
+  -webkit-transition: background-color 500ms ease-in;
+  -o-transition: background-color 500ms ease-in;
+  transition: background-color 500ms ease-in;
+  -webkit-transition: scale 500ms ease-in-out;
+  -o-transition: scale 500ms ease-in-out;
+  transition: scale 500ms ease-in-out;
 }
 .main-nav__list-item:hover {
   background-color: rgba(97, 105, 116, 0.5019607843);
@@ -46,7 +46,7 @@
 .main-nav__form {
   border: none;
   background-color: transparent;
-  margin-left: 130px;
+  margin-left: 9rem;
 }
 .main-nav input[type=text] {
   width: 200px;
@@ -59,8 +59,8 @@
   -webkit-transition: 500ms all ease-out;
   -o-transition: 500ms all ease-out;
   transition: 500ms all ease-out;
-  -webkit-animation: wiggle 3s ease-out infinite;
-  animation: wiggle 3s ease-out infinite;
+  -webkit-animation: wiggle 3000ms ease-out infinite;
+  animation: wiggle 3000ms ease-out infinite;
 }
 .main-nav .bg-green:hover {
   background-color: rgba(116, 199, 6, 0.5019607843);

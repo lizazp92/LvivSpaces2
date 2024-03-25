@@ -6,7 +6,7 @@ body {
   @include page1__bg;
   color: $login-register-color;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 12.5rem;
   font-family: $font-stack;
 }
 
@@ -17,8 +17,9 @@ body {
 }
 
 .primary-btn {
-  width: 375px;
+  width: 100%;
   height: 43px;
+  padding: 1rem 1.5rem;
   color: $primary-btn-login;
   background-color: $login-register-btn-bg1;
   &:hover {
@@ -31,10 +32,11 @@ body {
 
 .secondary-btn {
   background-color: transparent;
-  border: 1px solid #000000;
-  border-radius: 40px;
+  border: $border-black;
+  border-radius: 2.5rem;
   height: 40px;
   width: 120px;
+  margin: 0.5rem 0;
   &:hover {
     background-color: $login-register-btn-bg1;
   }
@@ -46,17 +48,17 @@ body {
 /* NAVBAR */
 
 .main-nav {
-  margin-top: -200px;
+  margin-top: -12.5rem;
 }
 
 /* SIGN IN FORM */
 .questionary {
   background-color: $form-bg;
-  width: 480px;
-  border-radius: 30px;
+  width: 40vw;
+  border-radius: 1.8rem;
   overflow: hidden;
-  margin-top: -70px;
-  padding: 15px 52px 10px;
+  margin-top: -4.3rem;
+  padding: 1rem 3.1rem 0.6rem;
   .sign-in {
     &__text {
       &::before {
@@ -72,16 +74,17 @@ body {
 .formstyle {
   input {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: 1px solid #5d5d5d;
-    padding: 14.5px 24px;
+    padding: 1rem 1.5rem;
     box-sizing: border-box;
     display: inline-block;
     &::-moz-placeholder {
       color: $login-register-placeholder;
     }
     &[type="radio"] {
-      transform: scale(2);
+      transform: scale(1.5);
+      margin: 1rem 0;
     }
   }
   span {
@@ -89,5 +92,15 @@ body {
   }
   label {
     display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-wrapper {
+    display: block;
+  }
+  .questionary {
+    width: 90vw;
+    margin: 0 auto 2rem;
   }
 }

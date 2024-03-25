@@ -73,6 +73,12 @@
   background: linear-gradient($page-gradient-1color, $page-gradient-2color);
 }
 
+@mixin fit-content {
+  height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+}
+
 @mixin transition($args) {
   -webkit-transition: $args;
   -o-transition: $args;
@@ -119,7 +125,7 @@
 }
 
 @mixin page1__title-font {
-  font-size: 80px;
+  font-size: 5rem;
   font-stretch: extra-expanded;
   font-family: $font-hero-title;
   font-weight: 700;
