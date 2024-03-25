@@ -14,8 +14,9 @@ body {
   background-color: transparent;
   border: $border-black;
   border-radius: 2.5rem;
-  height: 40px;
-  width: 120px;
+  height: auto;
+  max-width: 120px;
+  margin: 0.5rem 0;
 }
 
 .main-nav {
@@ -28,7 +29,7 @@ body {
   background-color: $form-bg;
   border-radius: 0.25rem;
   margin: 7.5rem auto 3.1rem;
-  width: 600px;
+  width: 50vw;
   padding: 1.8rem;
   label {
     display: block;
@@ -66,4 +67,10 @@ input {
 }
 select {
   @extend input;
+}
+
+@media (max-width: 992px) {
+  .book-tour-page {
+    width: 80vw;
+  }
 }
