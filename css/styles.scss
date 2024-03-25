@@ -176,12 +176,10 @@ em {
     text-decoration: none;
     color: inherit;
   }
-  &:hover {
+  &:hover,
+  &:active {
     background-color: $primary-btn-hover;
     color: $primary-btn-hover-color;
-  }
-  &:active {
-    background-color: $primary-btn-active;
   }
 }
 
@@ -213,11 +211,32 @@ em {
   }
 }
 
+@media (max-width: 600px) {
+  .page1 {
+    &__content {
+      padding-top: 50%;
+      width: 90vw;
+      &-title {
+        animation: none;
+        color: $page-heading-bg;
+      }
+    }
+  }
+}
+
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page1 {
+    &__content {
+      padding-top: 30%;
+      width: 90vw;
+    }
+  }
+}
+
 // PAGE 2
 
 .page2 {
   @include bg-gradient($page-gradient-1color, $page-gradient-2color);
-  @extend %section-position;
   @include flex-center;
   @include items-center;
 
@@ -229,7 +248,8 @@ em {
   &__img2 {
     width: 26%;
     @include transition(500ms transform ease-in-out 100ms);
-    &:hover {
+    &:hover,
+    &:active {
       @include transform(scale(1.2));
       z-index: 1;
     }
@@ -249,11 +269,40 @@ em {
       text-align: center;
       @include transition(500ms transform ease-out);
       @include transition(200ms color ease-in);
-      &:hover {
+      &:hover,
+      &:active {
         color: $page2-link-hover;
         @include transform(
           translateX(10px) rotate(10deg) translateY(5px) scale(1.5)
         );
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section-position {
+    display: none;
+  }
+  .page2 {
+    display: block;
+    background-image: url(../img/section2-1.jpg);
+    background-position: center;
+
+    &__img1,
+    &__img2 {
+      display: none;
+    }
+    &__content {
+      background-color: rgba(255, 255, 255, 0.329);
+      width: 100vw;
+      margin: 0 auto 2rem;
+      padding: 10% 5% 0;
+    }
+    &__stats {
+      &-link {
+        padding: 3rem 0 3rem;
+        font-size: 2rem;
       }
     }
   }
@@ -269,9 +318,6 @@ em {
 }
 
 .flip-card {
-  // Do I need to add responsive width/height values here? as it's a flex-wrap and after shrinking the columns and rows order will change
-  // width: 18.3vw;
-  // height: 34vh;
   width: 250px;
   height: 200px;
   margin: 0.75rem;
@@ -306,12 +352,22 @@ em {
   }
 }
 
-.separate-flip:hover {
+.separate-flip:hover,
+.separate-flip:active {
   .flip-card {
     @include transform(rotateY(180deg) rotate(2deg) scale(1.17));
     z-index: 2;
     box-shadow: 2px 2px 10px $flip-card-shadow;
     border: 10px double $page-heading-bg;
+  }
+}
+
+@media (max-width: 600px) {
+  .page3 {
+    margin-top: -35px;
+  }
+  .page-heading {
+    margin: 0 1rem 1rem;
   }
 }
 
@@ -321,44 +377,21 @@ em {
   @extend %section-position;
   @include bg-gradient($page-gradient-2color, $page-gradient-1color);
   &__options {
+    @include grid-center(repeat(2, auto), repeat(2, auto), 3rem);
     margin: 0 auto;
-    @media (max-width: 420px) {
-      @include grid-center(repeat(4, 60%), 100%, 3rem);
-      .option {
-        width: 100%;
-        margin: 0 auto;
-      }
-    }
-    @media (min-width: 421px) and (max-width: 768px) {
-      padding: 3.1rem 1rem;
-      @include grid-center(repeat(4, 60%), 100%, 1rem);
-      .option {
-        width: auto;
-        &__card {
-          &__title {
-            margin-top: 5px;
-          }
-        }
-      }
-    }
-    @media (min-width: 769px) and (max-width: 100vw) {
-      @include grid-center(repeat(2, 50%), repeat(2, 50%), 0);
-      max-width: 70vw;
-      .option {
-        width: 90%;
-      }
-    }
+    width: 60vw;
   }
 }
 
 .option {
-  width: 400px;
+  width: 100%;
   height: 390px;
   background-color: $option-bg;
-  margin: 1.5rem;
+
   &__card {
     position: relative;
-    &:hover {
+    &:hover,
+    &:active {
       .option__card-img,
       .option__card-badge-discount,
       .option__card-badge-new {
@@ -385,7 +418,6 @@ em {
     }
     &-img {
       width: 100%;
-      height: 100%;
       @include object-cover;
       height: 300px;
     }
@@ -418,7 +450,7 @@ em {
   &-buy {
     @extend .primary-btn;
     width: 75%;
-    height: 40px;
+    height: auto;
     background-color: $option-btn-bg;
     @include box-shadow(4px 4px 1px $option-btn-shadow);
     position: absolute;
@@ -427,7 +459,8 @@ em {
     margin: 0 0.6rem;
 
     @include transition(400ms all ease-out);
-    &:hover {
+    &:hover,
+    &:active {
       @include transform(scale(1.1));
     }
   }
@@ -440,13 +473,32 @@ em {
     text-decoration: none;
     color: $book-tour-link;
     @include transition(500ms all ease-out);
-    &:hover {
+    &:hover,
+    &:active {
       color: $book-tour-link-hover;
       @include transform(scale(1.5));
       outline: dotted $book-tour-outline-hover;
     }
   }
 }
+
+@media (max-width: 600px) {
+  .page4__options {
+    display: block;
+    width: 90vw;
+
+    .option {
+      margin-bottom: 2rem;
+    }
+  }
+}
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page4__options {
+    width: 85vw;
+    grid-gap: 2rem;
+  }
+}
+
 // PAGE 5 why us
 
 .page5 {
@@ -456,8 +508,9 @@ em {
     color: $page5-heading;
   }
   &__wrapper {
-    @include grid-center(repeat(4, 400px), repeat(2, 500px), 15px);
-
+    @include grid-center(repeat(4, auto), repeat(2, auto), 0.5rem);
+    width: 70vw;
+    margin: 0 auto;
     &-element1 {
       grid-area: 1 / 1 / 2 / 3;
       @extend .page5__reason;
@@ -483,11 +536,15 @@ em {
       @extend .page5__reason;
     }
   }
+
   &__reason {
+    width: 100%;
+    height: 350px;
     position: relative;
     @include filter-brightness(50%);
     @include transition(500ms filter ease-out);
-    &:hover {
+    &:hover,
+    &:active {
       @include filter-brightness(100%);
     }
     &-img {
@@ -509,6 +566,26 @@ em {
   }
 }
 
+@media (max-width: 600px) {
+  .page5__wrapper {
+    display: block;
+    width: 90vw;
+
+    &-element1,
+    &-element2,
+    &-element3,
+    &-element4,
+    &-element5,
+    &-element6 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page5__wrapper {
+    width: 90vw;
+  }
+}
 // GALLERY
 .page6 {
   background-color: $page-gradient-1color;
@@ -520,5 +597,24 @@ em {
   }
   #carouselExample {
     width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  .page6 {
+    h2 {
+      margin-top: -50px;
+    }
+    #carouselExample {
+      width: 90vw;
+    }
+  }
+}
+
+@media ((min-width: 601px) and (max-width: 1200px)) {
+  .page6 {
+    #carouselExample {
+      width: 90vw;
+    }
   }
 }
