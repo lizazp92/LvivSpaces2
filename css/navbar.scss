@@ -4,52 +4,140 @@
 @use "mixins" as *;
 
 .main-nav {
-  @include flex-space-around;
+  @include flex-space-between;
+  @include items-center;
   background-color: $navbar-bg;
-  padding: 0.3rem 3.1rem;
+  padding: 0 3.1rem;
   position: fixed;
   z-index: 3;
   margin-top: -4.1rem;
   width: 100%;
+  .icon,
+  .home-icon {
+    cursor: pointer;
+    font-size: 2.2rem;
+    color: #3a3023;
+    transition: 200ms ease-out;
+    &:hover,
+    &:active {
+      color: rgb(182, 162, 162);
+    }
+  }
+  .icon {
+    display: none;
+  }
 
-  &__list {
-    @include navbar__list;
+  .pages-navigation,
+  .search-navigation {
+    @include flex;
+    @include items-center;
+    display: flex;
+    align-items: center;
 
-    &-item {
-      background-color: $navbar-item-bg;
-      margin: 0.6rem 0.9rem;
-      padding: 0.6rem;
-      border-radius: 0.3rem;
-      border: 1px solid $navbar-item-border;
-      @include transition(background-color 500ms ease-in);
-      @include transition(scale 500ms ease-in-out);
+    &__list {
+      list-style: none;
 
-      &:hover {
-        background-color: $navbar-item-hover;
-        @include transform(scale(1.1));
+      &-item {
+        display: inline-block;
+        background-color: $navbar-item-bg;
+        margin: 0.2rem 0.9rem;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        border: 1px solid $navbar-item-border;
+        @include transition(background-color 500ms ease-in);
+        @include transition(scale 500ms ease-in-out);
+
+        &:hover,
+        &:active {
+          background-color: $navbar-item-hover;
+          @include transform(scale(1.1));
+        }
+      }
+    }
+
+    &__form {
+      border: none;
+      background-color: transparent;
+    }
+
+    & input[type="text"] {
+      width: 200px;
+    }
+    & input[type="submit"] {
+      width: 65px;
+    }
+
+    .bg-green {
+      background-color: $join-us;
+      @include transition(500ms all ease-out);
+      @include animation(wiggle 3000ms ease-out infinite);
+      &:hover,
+      &:active {
+        background-color: $join-us-hover;
       }
     }
   }
 
-  &__form {
-    border: none;
-    background-color: transparent;
-    margin-left: 9rem;
+  @media (max-width: 900px) {
+    padding: 1rem 2rem;
+    .icon {
+      display: block;
+    }
+
+    .pages-navigation__list,
+    .pages-navigation__form {
+      display: none;
+      position: fixed;
+      top: 66px;
+      left: 0;
+      background-color: $navbar-media-list;
+      width: 50%;
+      height: 100%;
+    }
+
+    .check:checked ~ .pages-navigation__list,
+    .check-search:checked ~ .pages-navigation__form {
+      @include flex-column;
+      padding: 2rem 1rem;
+      .pages-navigation__list-item {
+        margin: 1rem;
+      }
+    }
+    .pages-navigation__form {
+      width: 50%;
+      height: 10%;
+      top: 64px;
+      left: 48%;
+    }
+  }
+  .check,
+  .check-search {
+    display: none;
   }
 
-  & input[type="text"] {
-    width: 200px;
-  }
-  & input[type="submit"] {
-    width: 65px;
-  }
-
-  .bg-green {
-    background-color: $join-us;
-    @include transition(500ms all ease-out);
-    @include animation(wiggle 3000ms ease-out infinite);
-    &:hover {
-      background-color: $join-us-hover;
+  @media ((min-width: 901px) and (max-width: 1200px)) {
+    padding: 0.6rem 2rem;
+    .fa-magnifying-glass {
+      display: block;
+    }
+    .pages-navigation__form {
+      display: none;
+      position: fixed;
+      top: 66px;
+      left: 0;
+      background-color: $navbar-media-list;
+      width: 50%;
+      height: 100%;
+    }
+    .check-search:checked ~ .pages-navigation__form {
+      @include flex-column;
+      padding: 2rem 1rem;
+    }
+    .pages-navigation__form {
+      width: 50%;
+      height: 10%;
+      top: 62px;
+      left: 48%;
     }
   }
 }

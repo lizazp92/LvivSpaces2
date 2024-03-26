@@ -42,34 +42,52 @@
   <body>
     <header id="page-header">
       <nav id="page-navigation" class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="#about" class="link-style">About us</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#choose-book" class="link-style">Choose and book</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#why-us" class="link-style">Why us</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#gallery" class="link-style">Our gallery</a>
-          </li>
-          <li class="bg-green main-nav__list-item">
-            <a href="./pages/login-register.html" class="link-style">Join us</a>
-          </li>
-          <li class="main-nav__form">
-            <form class="d-flex" role="search" action="/submit" method="get">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-secondary" type="submit">Search</button>
-            </form>
-          </li>
-        </ul>
+        <a href="#" class="home-link"
+          ><i class="home-icon fa-solid fa-house"></i
+        ></a>
+        <div class="pages-navigation">
+          <input type="checkbox" id="check" name="check" class="check" />
+          <label for="check"><i class="icon fa-solid fa-bars"></i></label>
+
+          <ul class="pages-navigation__list">
+            <li class="pages-navigation__list-item">
+              <a href="#choose-book" class="link-style">Choose and book</a>
+            </li>
+
+            <li class="pages-navigation__list-item">
+              <a href="#gallery" class="link-style">Our gallery</a>
+            </li>
+            <li class="pages-navigation__list-item">
+              <a href="#why-us" class="link-style">Why us</a>
+            </li>
+            <li class="bg-green pages-navigation__list-item">
+              <a href="./pages/login-register.html" class="link-style"
+                >Join us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <input
+          type="checkbox"
+          id="check-search"
+          name="check-search"
+          class="check-search"
+        />
+        <label for="check-search">
+          <i class="icon fa-solid fa-magnifying-glass"></i
+        ></label>
+
+        <li class="pages-navigation__list-item pages-navigation__form">
+          <form class="d-flex" role="search" action="/submit" method="get">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-secondary" type="submit">Search</button>
+          </form>
+        </li>
       </nav>
     </header>
     <main>
