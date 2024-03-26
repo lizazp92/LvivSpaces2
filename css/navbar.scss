@@ -4,9 +4,8 @@
 @use "mixins" as *;
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-space-between;
+  @include items-center;
   background-color: $navbar-bg;
   padding: 0 3.1rem;
   position: fixed;
@@ -30,6 +29,8 @@
 
   .pages-navigation,
   .search-navigation {
+    @include flex;
+    @include items-center;
     display: flex;
     align-items: center;
 
@@ -96,8 +97,7 @@
 
     .check:checked ~ .pages-navigation__list,
     .check-search:checked ~ .pages-navigation__form {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       padding: 2rem 1rem;
       .pages-navigation__list-item {
         margin: 1rem;
@@ -115,7 +115,7 @@
     display: none;
   }
 
-  @media ((min-width: 901px) and (max-width: 1052px)) {
+  @media ((min-width: 901px) and (max-width: 1200px)) {
     padding: 0.6rem 2rem;
     .fa-magnifying-glass {
       display: block;
@@ -130,8 +130,7 @@
       height: 100%;
     }
     .check-search:checked ~ .pages-navigation__form {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
       padding: 2rem 1rem;
     }
     .pages-navigation__form {

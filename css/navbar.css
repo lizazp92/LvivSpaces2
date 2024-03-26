@@ -1,7 +1,13 @@
 /* Navigation bar with flexbox*/
 .main-nav {
   display: flex;
+  display: -webkit-box-flex;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: rgba(101, 87, 74, 0.8);
   padding: 0 3.1rem;
@@ -27,6 +33,12 @@
 }
 .main-nav .pages-navigation,
 .main-nav .search-navigation {
+  display: flex;
+  display: -webkit-box-flex;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: flex;
   align-items: center;
 }
@@ -104,7 +116,12 @@
   .main-nav .check:checked ~ .pages-navigation__list,
   .main-nav .check-search:checked ~ .pages-navigation__form {
     display: flex;
+    display: -webkit-box-flex;
+    display: -ms-flexbox;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     padding: 2rem 1rem;
   }
   .main-nav .check:checked ~ .pages-navigation__list .pages-navigation__list-item,
@@ -122,7 +139,7 @@
 .main-nav .check-search {
   display: none;
 }
-@media ((min-width: 901px) and (max-width: 1052px)) {
+@media ((min-width: 901px) and (max-width: 1200px)) {
   .main-nav {
     padding: 0.6rem 2rem;
   }
@@ -140,7 +157,12 @@
   }
   .main-nav .check-search:checked ~ .pages-navigation__form {
     display: flex;
+    display: -webkit-box-flex;
+    display: -ms-flexbox;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     padding: 2rem 1rem;
   }
   .main-nav .pages-navigation__form {

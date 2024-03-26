@@ -57,6 +57,13 @@
   -ms-flex-pack: distribute;
 }
 
+@mixin flex-space-between {
+  @include flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 @mixin flex-end {
   @include flex;
   justify-content: flex-end;
@@ -110,12 +117,6 @@
   object-fit: cover;
   -o-object-fit: cover;
 }
-// NAVBAR
-// @mixin navbar__list {
-//   display: inline-block;
-//   @include items-center;
-//   list-style: none;
-// }
 
 // PAGE 1
 @mixin page1__bg {
