@@ -86,7 +86,7 @@
 }
 @media (max-width: 900px) {
   .main-nav {
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
   .main-nav .icon {
     display: block;
@@ -121,6 +121,34 @@
 .main-nav .check,
 .main-nav .check-search {
   display: none;
+}
+@media ((min-width: 901px) and (max-width: 1052px)) {
+  .main-nav {
+    padding: 0.6rem 2rem;
+  }
+  .main-nav .fa-magnifying-glass {
+    display: block;
+  }
+  .main-nav .pages-navigation__form {
+    display: none;
+    position: fixed;
+    top: 66px;
+    left: 0;
+    background-color: rgb(80, 67, 56);
+    width: 50%;
+    height: 100%;
+  }
+  .main-nav .check-search:checked ~ .pages-navigation__form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .main-nav .pages-navigation__form {
+    width: 50%;
+    height: 10%;
+    top: 62px;
+    left: 48%;
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */

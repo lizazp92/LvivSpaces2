@@ -78,7 +78,7 @@
   }
 
   @media (max-width: 900px) {
-    padding: 1rem;
+    padding: 1rem 2rem;
     .icon {
       display: block;
     }
@@ -89,7 +89,7 @@
       position: fixed;
       top: 66px;
       left: 0;
-      background-color: rgb(80, 67, 56);
+      background-color: $navbar-media-list;
       width: 50%;
       height: 100%;
     }
@@ -113,5 +113,32 @@
   .check,
   .check-search {
     display: none;
+  }
+
+  @media ((min-width: 901px) and (max-width: 1052px)) {
+    padding: 0.6rem 2rem;
+    .fa-magnifying-glass {
+      display: block;
+    }
+    .pages-navigation__form {
+      display: none;
+      position: fixed;
+      top: 66px;
+      left: 0;
+      background-color: $navbar-media-list;
+      width: 50%;
+      height: 100%;
+    }
+    .check-search:checked ~ .pages-navigation__form {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+    .pages-navigation__form {
+      width: 50%;
+      height: 10%;
+      top: 62px;
+      left: 48%;
+    }
   }
 }
