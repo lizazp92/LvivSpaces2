@@ -111,11 +111,11 @@
   -o-object-fit: cover;
 }
 // NAVBAR
-@mixin navbar__list {
-  @include flex-end;
-  @include items-center;
-  list-style: none;
-}
+// @mixin navbar__list {
+//   display: inline-block;
+//   @include items-center;
+//   list-style: none;
+// }
 
 // PAGE 1
 @mixin page1__bg {
