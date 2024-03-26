@@ -130,9 +130,10 @@
   }
   .main-nav .pages-navigation__form {
     width: 100%;
-    height: 10%;
+    height: 12%;
     top: 64px;
     left: -14px;
+    align-items: center;
   }
 }
 .main-nav .check,
