@@ -229,10 +229,28 @@ em {
   background-color: rgba(61, 53, 42, 0.5);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
+  .page1 {
+    background-image: url(../img/hero-photo-600.png);
+    background-position: 60% 10%;
+  }
   .page1__content {
-    padding-top: 50%;
+    padding-top: 30%;
     width: 90vw;
+  }
+  .page1__content-title {
+    font-size: 4.8rem;
+    animation: none;
+    color: #ae832d;
+  }
+}
+@media ((min-width: 401px) and (max-width: 600px)) {
+  .page1 {
+    background-image: url(../img/hero-photo-600.png);
+  }
+  .page1__content {
+    padding-top: 20%;
+    width: 80vw;
   }
   .page1__content-title {
     animation: none;
@@ -241,7 +259,7 @@ em {
 }
 @media ((min-width: 601px) and (max-width: 1200px)) {
   .page1__content {
-    padding-top: 30%;
+    padding-top: 10%;
     width: 90vw;
   }
 }
